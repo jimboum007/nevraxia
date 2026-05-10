@@ -274,9 +274,9 @@ const FEATURE_VISUALS = [
 ];
 
 function FeatureBlock({
-  icon, title, desc, color, index, inView, contactHref, visual,
+  icon, title, desc, color, index, inView, contactHref, visual, cta,
 }: {
-  icon: React.ReactNode; title: string; desc: string; color: string; index: number; inView: boolean; contactHref: string; visual: React.ReactNode;
+  icon: React.ReactNode; title: string; desc: string; color: string; index: number; inView: boolean; contactHref: string; visual: React.ReactNode; cta: string;
 }) {
   const isEven = index % 2 === 0;
 
@@ -298,7 +298,7 @@ function FeatureBlock({
         <p className="text-base leading-relaxed mb-6" style={{ color: "#8B949E" }}>{desc}</p>
         <Link href={contactHref} className="inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-70">
           <div className="w-2 h-2 rounded-full" style={{ background: color }} />
-          <span style={{ color }}>En savoir plus →</span>
+          <span style={{ color }}>{cta} →</span>
         </Link>
       </div>
 
@@ -401,6 +401,7 @@ export default function Features() {
               inView={inView}
               contactHref={contactHref}
               visual={FEATURE_VISUALS[i]}
+              cta={t("cta")}
             />
           ))}
         </div>
