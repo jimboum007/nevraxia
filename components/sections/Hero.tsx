@@ -188,12 +188,15 @@ export default function Hero() {
 
         {/* App preview mockup */}
         <div className="mt-20 relative max-w-5xl mx-auto">
+          {/* Glow behind mockup */}
+          <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 50% at 50% 60%, rgba(29,111,235,0.13) 0%, transparent 70%)", filter: "blur(24px)" }} />
+
           <div
             className="relative rounded-2xl overflow-hidden animate-float"
             style={{
               background: "#161B22",
               border: "1px solid #30363D",
-              boxShadow: "0 40px 100px rgba(0,0,0,0.6), 0 0 80px rgba(29,111,235,0.08)",
+              boxShadow: "0 40px 100px rgba(0,0,0,0.7), 0 0 0 1px rgba(29,111,235,0.08)",
             }}
           >
             {/* Window chrome */}
@@ -201,84 +204,174 @@ export default function Hero() {
               <div className="w-3 h-3 rounded-full" style={{ background: "#F78166" }} />
               <div className="w-3 h-3 rounded-full" style={{ background: "#E3B341" }} />
               <div className="w-3 h-3 rounded-full" style={{ background: "#3FB950" }} />
-              <div className="ml-4 flex-1 h-6 rounded" style={{ background: "#161B22", maxWidth: "200px" }} />
+              <div className="ml-4 h-5 rounded-md" style={{ background: "#161B22", width: "180px" }} />
             </div>
 
-            {/* Dashboard mockup content */}
-            <div className="p-6" style={{ background: "#0D1117" }}>
-              {/* Header bar */}
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <div className="h-6 w-48 rounded-lg mb-2" style={{ background: "#161B22" }} />
-                  <div className="h-4 w-32 rounded" style={{ background: "#161B22" }} />
-                </div>
-                <div className="h-8 w-24 rounded-lg" style={{ background: "rgba(29,111,235,0.2)", border: "1px solid rgba(29,111,235,0.4)" }} />
-              </div>
+            {/* Dashboard body */}
+            <div className="flex" style={{ background: "#0D1117", minHeight: "300px" }}>
 
-              {/* Stats row */}
-              <div className="grid grid-cols-4 gap-3 mb-6">
+              {/* Sidebar */}
+              <div className="flex flex-col items-center py-5 gap-5 shrink-0" style={{ width: "52px", background: "#0D1117", borderRight: "1px solid #30363D" }}>
                 {[
-                  { label: "CA Total", value: "926k CHF", color: "#1D6FEB" },
-                  { label: "CA Encaissé", value: "508k CHF", color: "#3FB950" },
-                  { label: "En Attente", value: "345k CHF", color: "#E3B341" },
-                  { label: "Backlog", value: "172k CHF", color: "#F78166" },
-                ].map((s) => (
-                  <div key={s.label} className="p-3 rounded-xl" style={{ background: "#161B22", border: "1px solid #30363D" }}>
-                    <div className="text-xs mb-1" style={{ color: "#8B949E" }}>{s.label}</div>
-                    <div className="text-sm font-bold" style={{ color: s.color }}>{s.value}</div>
+                  // chart-bar
+                  "M3 3v18h18M7 16l4-4 4 4 4-4",
+                  // document
+                  "M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8",
+                  // activity / EEG
+                  "M22 12h-4l-3 9L9 3l-3 9H2",
+                  // users
+                  "M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75",
+                  // globe
+                  "M12 2a10 10 0 100 20A10 10 0 0012 2zM2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20",
+                  // settings
+                  "M12 15a3 3 0 100-6 3 3 0 000 6zM19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z",
+                ].map((d, i) => (
+                  <div key={i} className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: i === 0 ? "rgba(29,111,235,0.2)" : "transparent" }}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={i === 0 ? "#388BFD" : "#484F58"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d={d} />
+                    </svg>
                   </div>
                 ))}
               </div>
 
-              {/* Chart area */}
-              <div className="h-24 rounded-xl flex items-end gap-2 px-3 pb-3" style={{ background: "#161B22", border: "1px solid #30363D" }}>
-                {[40, 65, 45, 80, 55, 90, 70, 85, 60, 95, 75, 100].map((h, i) => (
-                  <div
-                    key={i}
-                    className="flex-1 rounded-sm opacity-80"
-                    style={{
-                      height: `${h}%`,
-                      background: i === 11
-                        ? "linear-gradient(180deg, #1D6FEB, #388BFD)"
-                        : "rgba(29,111,235,0.25)",
-                    }}
-                  />
-                ))}
+              {/* Main area */}
+              <div className="flex-1 p-5 flex flex-col gap-4">
+
+                {/* Metric cards */}
+                <div className="grid grid-cols-4 gap-3">
+                  {[
+                    { icon: "M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6", value: "926k CHF", color: "#388BFD", bg: "rgba(29,111,235,0.12)" },
+                    { icon: "M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3", value: "508k CHF", color: "#3FB950", bg: "rgba(63,185,80,0.1)" },
+                    { icon: "M12 22V12M12 12L8 8m4 4l4-4M2 17l4-4 4 4 4-4 4 4", value: "345k CHF", color: "#E3B341", bg: "rgba(227,179,65,0.1)" },
+                    { icon: "M12 2a10 10 0 100 20A10 10 0 0012 2zM2 12h20", value: "Top 10%", color: "#39D0D8", bg: "rgba(57,208,216,0.1)" },
+                  ].map((m, i) => (
+                    <div key={i} className="p-3 rounded-xl" style={{ background: "#161B22", border: "1px solid #30363D" }}>
+                      <div className="w-7 h-7 rounded-lg flex items-center justify-center mb-2" style={{ background: m.bg }}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={m.color} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                          <path d={m.icon} />
+                        </svg>
+                      </div>
+                      <div className="text-sm font-bold" style={{ color: m.color }}>{m.value}</div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Charts row */}
+                <div className="grid gap-3" style={{ gridTemplateColumns: "1fr 1fr" }}>
+
+                  {/* Bar chart */}
+                  <div className="rounded-xl p-3" style={{ background: "#161B22", border: "1px solid #30363D" }}>
+                    <div className="h-3 w-20 rounded mb-3" style={{ background: "#30363D" }} />
+                    <div className="flex items-end gap-1.5" style={{ height: "72px" }}>
+                      {[38, 52, 44, 70, 58, 82, 65, 90, 72, 96, 80, 100].map((h, i) => (
+                        <div key={i} className="flex-1 rounded-sm" style={{
+                          height: `${h}%`,
+                          background: i === 11 ? "linear-gradient(180deg,#1D6FEB,#388BFD)" : i >= 9 ? "rgba(29,111,235,0.45)" : "rgba(29,111,235,0.2)",
+                        }} />
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Neural wave panel */}
+                  <div className="rounded-xl p-3 relative overflow-hidden" style={{ background: "#161B22", border: "1px solid #30363D" }}>
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="h-3 w-16 rounded" style={{ background: "#30363D" }} />
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "#3FB950" }} />
+                        <div className="text-xs font-medium" style={{ color: "#3FB950" }}>AI</div>
+                      </div>
+                    </div>
+                    <svg width="100%" height="72" viewBox="0 0 280 72" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#1D6FEB" stopOpacity="0.3" />
+                          <stop offset="100%" stopColor="#1D6FEB" stopOpacity="0" />
+                        </linearGradient>
+                        <filter id="wglow">
+                          <feGaussianBlur stdDeviation="1.5" result="blur" />
+                          <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+                        </filter>
+                      </defs>
+                      {/* Flat baseline then spike then return */}
+                      <path d="M0,36 L30,36 L35,36 L38,12 L42,60 L46,28 L50,48 L54,36 L80,36 L85,36 L88,8 L92,64 L96,24 L100,52 L104,36 L150,36 L155,36 L158,16 L162,56 L166,30 L170,46 L174,36 L220,36 L225,36 L228,10 L232,62 L236,26 L240,50 L244,36 L280,36"
+                        fill="url(#waveGrad)" stroke="none" />
+                      <path d="M0,36 L30,36 L35,36 L38,12 L42,60 L46,28 L50,48 L54,36 L80,36 L85,36 L88,8 L92,64 L96,24 L100,52 L104,36 L150,36 L155,36 L158,16 L162,56 L166,30 L170,46 L174,36 L220,36 L225,36 L228,10 L232,62 L236,26 L240,50 L244,36 L280,36"
+                        fill="none" stroke="#1D6FEB" strokeWidth="1.5" filter="url(#wglow)" />
+                    </svg>
+                  </div>
+
+                </div>
+
+                {/* Bottom row: mini patient list + ring */}
+                <div className="grid gap-3" style={{ gridTemplateColumns: "1fr auto" }}>
+                  <div className="flex items-center gap-2">
+                    {[
+                      { color: "#3FB950" }, { color: "#3FB950" }, { color: "#E3B341" },
+                      { color: "#3FB950" }, { color: "#3FB950" },
+                    ].map((p, i) => (
+                      <div key={i} className="flex items-center gap-2 px-3 py-1.5 rounded-lg flex-1" style={{ background: "#161B22", border: "1px solid #30363D" }}>
+                        <div className="w-5 h-5 rounded-full shrink-0" style={{ background: `rgba(${p.color === "#3FB950" ? "63,185,80" : "227,179,65"},0.15)`, border: `1.5px solid ${p.color}` }} />
+                        <div className="flex-1 h-2 rounded" style={{ background: "#30363D" }} />
+                        <div className="w-1.5 h-1.5 rounded-full" style={{ background: p.color }} />
+                      </div>
+                    ))}
+                  </div>
+                  {/* Ring */}
+                  <div className="flex items-center justify-center w-20 h-12">
+                    <svg width="52" height="52" viewBox="0 0 52 52">
+                      <circle cx="26" cy="26" r="20" fill="none" stroke="#1E2A3A" strokeWidth="6" />
+                      <circle cx="26" cy="26" r="20" fill="none" stroke="url(#ringGrad)" strokeWidth="6"
+                        strokeDasharray="125.66" strokeDashoffset="20" strokeLinecap="round"
+                        transform="rotate(-90 26 26)" />
+                      <defs>
+                        <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stopColor="#1D6FEB" />
+                          <stop offset="100%" stopColor="#39D0D8" />
+                        </linearGradient>
+                      </defs>
+                      <text x="26" y="30" textAnchor="middle" fontSize="9" fontWeight="700" fill="#F0F6FC">84%</text>
+                    </svg>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
 
-          {/* Floating badges */}
-          <div
-            className="absolute -left-6 top-1/3 px-4 py-2 rounded-xl shadow-2xl"
-            style={{ background: "#161B22", border: "1px solid #30363D" }}
-          >
+          {/* Floating badge left */}
+          <div className="absolute -left-4 sm:-left-8 top-1/3 px-3 py-2 rounded-xl shadow-2xl hidden sm:block"
+            style={{ background: "#161B22", border: "1px solid #30363D" }}>
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-lg flex items-center justify-center" style={{ background: "rgba(63,185,80,0.2)" }}>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="#3FB950">
-                  <path d="M2 6l3 3 5-5" stroke="#3FB950" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+              <div className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0" style={{ background: "rgba(63,185,80,0.15)" }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3FB950" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
               <div>
-                <div className="text-xs font-semibold" style={{ color: "#F0F6FC" }}>Rapport généré</div>
-                <div className="text-xs" style={{ color: "#8B949E" }}>En 3 secondes</div>
+                <div className="flex items-center gap-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full" style={{ background: "#3FB950" }} />
+                  <span className="text-xs font-semibold" style={{ color: "#F0F6FC" }}>AI · 3s</span>
+                </div>
+                <div className="flex gap-0.5 mt-1">
+                  {[1,1,1,0.5,0.3].map((o,i) => <div key={i} className="w-4 h-1 rounded-full" style={{ background: `rgba(63,185,80,${o * 0.6})` }} />)}
+                </div>
               </div>
             </div>
           </div>
 
-          <div
-            className="absolute -right-6 bottom-1/3 px-4 py-2 rounded-xl shadow-2xl"
-            style={{ background: "#161B22", border: "1px solid #30363D" }}
-          >
+          {/* Floating badge right */}
+          <div className="absolute -right-4 sm:-right-8 bottom-1/3 px-3 py-2 rounded-xl shadow-2xl hidden sm:block"
+            style={{ background: "#161B22", border: "1px solid #30363D" }}>
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-lg flex items-center justify-center" style={{ background: "rgba(29,111,235,0.2)" }}>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M6 2v4l3 3" stroke="#1D6FEB" strokeWidth="1.5" strokeLinecap="round" />
+              <div className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0" style={{ background: "rgba(57,208,216,0.12)" }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#39D0D8" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
                 </svg>
               </div>
               <div>
-                <div className="text-xs font-semibold" style={{ color: "#F0F6FC" }}>Benchmarking EU</div>
-                <div className="text-xs" style={{ color: "#3FB950" }}>Top 10%</div>
+                <div className="text-xs font-semibold" style={{ color: "#F0F6FC" }}>EU · Top 10%</div>
+                <div className="text-xs" style={{ color: "#39D0D8" }}>Benchmarking</div>
               </div>
             </div>
           </div>
