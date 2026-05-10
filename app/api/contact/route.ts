@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "Nevraxia <onboarding@resend.dev>",
+      from: "Nevraxia <noreply@nevraxia.ch>",
       to: "contact@nevraxia.ch",
       replyTo: email,
       subject: `Nouvelle demande de démo — ${name} ${lastname}`,
