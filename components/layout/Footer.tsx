@@ -73,7 +73,7 @@ export default function Footer() {
             <span className="text-xs" style={{ color: "#8B949E" }}>Made in Switzerland</span>
             <span className="text-base">🇨🇭</span>
             <span className="text-xs" style={{ color: "#30363D" }}>·</span>
-            <span className="text-xs" style={{ color: "#8B949E" }}>by Humans</span>
+            <span className="text-xs" style={{ color: "#8B949E" }}>by humans with ❤️</span>
           </div>
         </div>
       </div>
