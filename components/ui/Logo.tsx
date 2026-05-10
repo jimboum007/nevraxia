@@ -42,7 +42,7 @@ export default function Logo({
           className={`${spaceGrotesk.className} ${textSizes[size]}`}
           style={{ fontWeight: 600, letterSpacing: "-0.03em" }}
         >
-          <span style={{ color: baseColor }}>neurax</span>
+          <span style={{ color: baseColor }}>nevrax</span>
           <span
             style={{
               fontWeight: 700,
