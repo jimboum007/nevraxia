@@ -1,0 +1,191 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "benchmarking": "Benchmarking",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "demo": "Demo anfragen"
+  },
+  "hero": {
+    "badge": "Massgeschneiderte KI-Medizinlösung",
+    "headline": "Medizinische Intelligenz für Ihre Praxis",
+    "subline": "Neuraxia automatisiert Ihre medizinischen Berichte, überwacht Ihre wirtschaftliche Aktivität und benchmarkt Ihre Leistungen mit den besten europäischen Zentren — massgeschneidert für Sie.",
+    "subline2": "Für Mehrärzte-Strukturen konsolidiert Neuraxia den Umsatz je Arzt, verfolgt den Cashflow in Echtzeit und bietet vollständige Transparenz über jeden strategischen KPI — Konsultationen, Eingriffe, Einnahmen, Forderungen — damit Sie Ihre Gruppenpraxis, Ihr Zentrum oder Ihre Klinik mit CFO-Präzision steuern können.",
+    "target": "Konzipiert für Gruppenpraxen, Medizinzentren und standortübergreifende Kliniken.",
+    "cta_primary": "Demo anfragen",
+    "cta_secondary": "Lösung entdecken"
+  },
+  "stats": {
+    "docs": "Min. gespart pro Bericht",
+    "docs_suffix": " Min.",
+    "docs_label": "Pro KI-generiertem Bericht",
+    "doctors": "Sekretärin für 3 Ärzte",
+    "doctors_suffix": "",
+    "doctors_label": "Verwaltungszeit zurückgewinnen",
+    "custom": "massgeschneidert",
+    "custom_label": "Keine unnötigen Module",
+    "benchmark": "verfügbare Sprachen",
+    "benchmark_suffix": " Spr.",
+    "benchmark_label": "FR · EN · DE · IT"
+  },
+  "features": {
+    "title": "Alles was Ihre Praxis braucht",
+    "subtitle": "Eine vollständige Plattform für Gesundheitsfachleute, die schnell arbeiten wollen, ohne auf Qualität zu verzichten.",
+    "items": {
+      "ai_reports": {
+        "title": "KI-gestützte Berichtserstellung",
+        "desc": "Diktieren oder tippen Sie Ihre klinischen Notizen — die KI strukturiert und erstellt den vollständigen Bericht in Sekunden. Kein Zeitverlust mehr durch Schreiben, Korrigieren und Validieren."
+      },
+      "protocols": {
+        "title": "OP-, Interventions-, Endoskopie- & weitere Protokolle",
+        "desc": "Protokolle, die auf Ihre eigenen Praktiken, Ihre Fachrichtung und Ihre Erfahrung zugeschnitten sind — kein generisches Vorlage. Jedes Protokoll wird validiert, automatisch archiviert und durch die KI kontinuierlich verfeinert."
+      },
+      "enmg": {
+        "title": "Massgeschneiderte Prozessautomatisierung",
+        "desc": "Jedes Zentrum hat seine eigenen Routineaufgaben. Neuraxia identifiziert und automatisiert sie — Berichte, Nachsorge, Erinnerungen, interne Zusammenfassungen — damit Sie Ihre Personalressourcen dort einsetzen können, wo sie wirklich Mehrwert schaffen."
+      },
+      "qr": {
+        "title": "PROMs & Qualitätsmonitoring per QR-Code",
+        "desc": "Die Erfassung patientenberichteter Ergebnisse — Schmerz, Funktion, Lebensqualität — vor und nach der Behandlung ist für jedes seriöse Zentrum unverzichtbar geworden. Neuraxia bietet vollständig anpassbare QR-Code-Karten nach Ihren Fachgebieten und Protokollen, um PROMs reibungslos zu erfassen, zu analysieren und die Qualität Ihrer Versorgung kontinuierlich nachzuweisen."
+      },
+      "economics": {
+        "title": "Wirtschaftliches Echtzeit-Dashboard",
+        "desc": "Gesamtumsatz, eingezogener Umsatz, Rückstand und Forderungen: Ihre finanzielle Gesundheit unter Kontrolle."
+      },
+      "stats": {
+        "title": "Erweiterte chirurgische Statistiken",
+        "desc": "Komplikationen, Reinterventionen, unerwünschte Ereignisse, Revisionsraten: Visualisieren und analysieren Sie Ihre chirurgischen Ergebnisse."
+      }
+    }
+  },
+  "benchmarking": {
+    "badge": "Europäische Register",
+    "title": "Anbindung an europäische Operationsregister",
+    "subtitle": "Die automatische Analyse Ihrer OP-Protokolle, postoperativer Verläufe und PROMs ermöglicht es Neuraxia, Ihre Ergebnisse mit den grossen europäischen Registern abzugleichen — SIRIS Wirbelsäule, SIRIS Implant, Eurocrine, EPICARD, EPITHOR sowie Eurostat/OECD-Datenbanken — ohne zusätzliche manuelle Eingaben.",
+    "points": {
+      "db": "Automatische Integration in europäische Register (SIRIS, Eurocrine, EPICARD, EPITHOR): Ihre Daten werden im richtigen Format übermittelt — ohne Mehraufwand",
+      "ai": "Echtzeitzugang zu Ihren Zentrumstatistiken — Aktivität, Komplikationen, Mortalität — im Vergleich zu nationalen und europäischen Referenzwerten Ihrer Fachrichtung",
+      "compare": "Frühwarnsystem: automatische Erkennung signifikanter Abweichungen von europäischen Benchmarks für eine kontinuierliche Qualitätsverbesserung",
+      "privacy": "Anonymisierte Daten, konform mit DSGVO und Registeranforderungen — Sicherheit und vollständige Rückverfolgbarkeit garantiert"
+    },
+    "cta": "Mehr erfahren"
+  },
+  "scaling": {
+    "badge": "Intelligentes Wachstum",
+    "title": "Skalieren Sie Ihre Aktivität ohne steigende Personalkosten",
+    "subtitle": "Neuraxia wurde entwickelt, um mit Ihnen zu wachsen. Jeder Arzt, jede Spezialität und jeder Standort integriert sich ohne Reibung.",
+    "arg1_title": "Weniger Verwaltungspersonal",
+    "arg1_desc": "Die automatische Berichterstellung reduziert den Sekretariatsbedarf drastisch. Ihr Team konzentriert sich auf das Wesentliche.",
+    "arg2_title": "Reibungsfreies Wachstum",
+    "arg2_desc": "Fügen Sie in wenigen Klicks einen Arzt, eine Spezialität oder einen neuen Standort hinzu. Die Plattform passt sich sofort an.",
+    "arg3_title": "Sofortiger, messbarer ROI",
+    "arg3_desc": "Berechnen Sie Einsparungen ab dem ersten Monat. Reduzierter Sekretariatsbedarf, weniger Fehler, bessere Abrechnung.",
+    "calculator_title": "Schätzen Sie Ihre Einsparungen",
+    "doctors_label": "Anzahl Ärzte",
+    "consults_label": "Konsultationen / Tag / Arzt",
+    "rate_label": "Sekretariatsstundensatz (CHF/h)",
+    "minutes_label": "Eingesparte Zeit pro Bericht (Min.)",
+    "ca_label": "Jährlicher Zentrumsumsatz (CHF)",
+    "result_label": "Geschätzte Einsparungen / Monat",
+    "result_unit": "CHF / Monat"
+  },
+  "pricing": {
+    "badge": "Preisgestaltung",
+    "title": "Eine Lösung für Sie, nicht für alle",
+    "subtitle": "Sie zahlen nur für das, was Sie brauchen. Keine unnötigen Module, keine versteckten Kosten.",
+    "contact_cta": "Persönliches Angebot erhalten",
+    "starter": {
+      "name": "Starter",
+      "desc": "Ideal für einen niedergelassenen Arzt, der seine Praxis digitalisieren möchte.",
+      "price": "Auf Anfrage",
+      "features": [
+        "KI-Berichterstellung",
+        "1 Spezialität nach Wahl",
+        "Konsultationsverwaltung",
+        "Grundlegende Statistiken",
+        "E-Mail-Support"
+      ]
+    },
+    "cabinet": {
+      "name": "Praxis",
+      "desc": "Für Mehrärzte-Praxen mit unterschiedlichen Bedürfnissen.",
+      "price": "Auf Anfrage",
+      "badge": "Beliebt",
+      "features": [
+        "Alles aus Starter",
+        "Bis zu 10 Ärzte",
+        "Alle Spezialitäten",
+        "Protokolle",
+        "Europäisches Benchmarking",
+        "Vollständiges Wirtschafts-Dashboard",
+        "Prioritätssupport"
+      ]
+    },
+    "reseau": {
+      "name": "Netzwerk / Klinik",
+      "desc": "Für Mehrstandort-Organisationen und Hochvolumen-Kliniken.",
+      "price": "Auf Anfrage",
+      "features": [
+        "Alles aus Praxis",
+        "Unbegrenzte Standorte",
+        "API & benutzerdefinierte Integrationen",
+        "White-Label verfügbar",
+        "Dediziertes Onboarding",
+        "24/7-Support",
+        "Garantiertes SLA"
+      ]
+    },
+    "note": "Alle Lösungen beinhalten Einrichtung, Schulung und Updates. Keine versteckten Gebühren."
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Medizinische Praxen, die ihre Arbeit mit Neuraxia transformiert haben.",
+    "items": [
+      {
+        "quote": "Neuraxia hat unsere Arbeitsweise grundlegend verändert. Wir sparen täglich mindestens 2 Stunden Sekretariatsarbeit, und die Qualität der Berichte ist weit besser als vorher.",
+        "name": "Dr. A.B.",
+        "role": "Neurochirurg",
+        "org": "Neurochirurgie-Zentrum"
+      },
+      {
+        "quote": "Das europäische Benchmarking ist ein echter Mehrwert. Wir können unsere Qualitätsindikatoren endlich mit grossen Zentren vergleichen und Verbesserungsbereiche identifizieren.",
+        "name": "Dr. F.R.",
+        "role": "Orthopäde",
+        "org": "Orthopädische Klinik"
+      },
+      {
+        "quote": "Die Skalierbarkeit der Lösung ist beeindruckend. Wir haben zwei neue Ärzte an einem Tag integriert, ohne Reibung. Der Return on Investment ist offensichtlich.",
+        "name": "Medizinische Leitung",
+        "role": "Ärztliche Direktorin",
+        "org": "Medizinisches Praxisnetz"
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Bereit, Ihre Praxis zu transformieren?",
+    "subtitle": "Fordern Sie eine personalisierte Demo an. Wir zeigen Ihnen die für Ihre Praxis konfigurierte Lösung in 30 Minuten.",
+    "name": "Vorname",
+    "lastname": "Nachname",
+    "email": "Geschäftliche E-Mail",
+    "phone": "Telefon",
+    "structure": "Medizinische Einrichtung",
+    "specialty": "Fachrichtung",
+    "message": "Nachricht (optional)",
+    "submit": "Demo anfragen",
+    "sending": "Wird gesendet...",
+    "success_title": "Anfrage gesendet!",
+    "success_desc": "Wir werden Sie innerhalb von 24 Stunden kontaktieren, um Ihre Demo zu organisieren.",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "footer": {
+    "tagline": "Massgeschneiderte medizinische Intelligenz.",
+    "features": "Funktionen",
+    "benchmarking": "Benchmarking",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "legal": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© 2026 Neuraxia. Alle Rechte vorbehalten."
+  }
+}

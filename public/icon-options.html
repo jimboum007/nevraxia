@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neuraxia — Options icône</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0D1117; color: #F0F6FC; font-family: 'Space Grotesk', sans-serif; padding: 48px 32px 80px; }
+
+h1 { text-align: center; font-size: 11px; font-weight: 500; color: #8B949E; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 48px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 20px;
+  padding: 40px 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.option-num {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #8B949E;
+  text-transform: uppercase;
+}
+
+.tag {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.tag-blue  { background: rgba(29,111,235,0.15); color: #388BFD; }
+.tag-green { background: rgba(63,185,80,0.15);  color: #3FB950; }
+.tag-gold  { background: rgba(227,179,65,0.15); color: #E3B341; }
+
+/* Icon display row: dark bg + light bg */
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.bg-dark  { background: #0D1117; border-radius: 12px; padding: 20px; display: flex; align-items: center; justify-content: center; flex: 1; }
+.bg-light { background: #F1F5F9; border-radius: 12px; padding: 20px; display: flex; align-items: center; justify-content: center; flex: 1; }
+
+/* Size strip */
+.size-strip {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid #21262D;
+  border-bottom: 1px solid #21262D;
+}
+.size-label { font-size: 10px; color: #8B949E; width: 28px; flex-shrink: 0; }
+
+/* Description */
+.desc { font-size: 12px; color: #8B949E; line-height: 1.6; }
+.desc strong { color: #C9D1D9; font-weight: 600; }
+
+/* Lockup (icon + text) */
+.lockup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid #21262D;
+  border-radius: 10px;
+}
+.logotype { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; letter-spacing: -0.03em; }
+.logotype .base { color: #F0F6FC; }
+.logotype .ia {
+  font-weight: 700;
+  background: linear-gradient(135deg, #1D6FEB, #39D0D8);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+</style>
+</head>
+<body>
+
+<h1>Neuraxia · Options icône · IA au centre du nœud</h1>
+
+<div class="grid">
+
+<!-- ══════════════════════════════════════════
+     OPTION 1 — Triangle classique
+     ══════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-top">
+    <span class="option-num">Option 1</span>
+    <span class="tag tag-blue">Triangle classique</span>
+  </div>
+
+  <div class="icon-row">
+    <div class="bg-dark">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs>
+          <radialGradient id="c1" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient>
+          <linearGradient id="l1" x1="18" y1="18" x2="18" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1D6FEB" stop-opacity=".9"/><stop offset="100%" stop-color="#39D0D8" stop-opacity=".3"/></linearGradient>
+          <filter id="gs1"><feGaussianBlur stdDeviation=".8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="gc1"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <line x1="18" y1="18" x2="18" y2="7"  stroke="url(#l1)" stroke-width="1.3" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="28" y2="25" stroke="url(#l1)" stroke-width="1.3" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="8"  y2="25" stroke="url(#l1)" stroke-width="1.3" stroke-linecap="round"/>
+        <circle cx="18" cy="7"  r="3"   stroke="#1D6FEB" stroke-width="1.4" fill="none" filter="url(#gs1)"/>
+        <circle cx="28" cy="25" r="3"   stroke="#39D0D8" stroke-width="1.4" fill="none" filter="url(#gs1)"/>
+        <circle cx="8"  cy="25" r="3"   stroke="#388BFD" stroke-width="1.4" fill="none" filter="url(#gs1)"/>
+        <circle cx="18" cy="18" r="7"   fill="url(#c1)" filter="url(#gc1)"/>
+        <circle cx="15.5" cy="15.5" r="2" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+    <div class="bg-light">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs>
+          <radialGradient id="c1l" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient>
+          <linearGradient id="l1l" x1="18" y1="18" x2="18" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1D6FEB" stop-opacity=".7"/><stop offset="100%" stop-color="#39D0D8" stop-opacity=".25"/></linearGradient>
+        </defs>
+        <line x1="18" y1="18" x2="18" y2="7"  stroke="url(#l1l)" stroke-width="1.3" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="28" y2="25" stroke="url(#l1l)" stroke-width="1.3" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="8"  y2="25" stroke="url(#l1l)" stroke-width="1.3" stroke-linecap="round"/>
+        <circle cx="18" cy="7"  r="3"   stroke="#1D6FEB" stroke-width="1.4" fill="none"/>
+        <circle cx="28" cy="25" r="3"   stroke="#39D0D8" stroke-width="1.4" fill="none"/>
+        <circle cx="8"  cy="25" r="3"   stroke="#388BFD" stroke-width="1.4" fill="none"/>
+        <circle cx="18" cy="18" r="7"   fill="url(#c1l)"/>
+        <circle cx="15.5" cy="15.5" r="2" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="size-strip">
+    <span class="size-label">64</span>
+    <svg width="64" height="64" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c1s3" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient><linearGradient id="l1s3" x1="18" y1="18" x2="18" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1D6FEB" stop-opacity=".9"/><stop offset="100%" stop-color="#39D0D8" stop-opacity=".3"/></linearGradient></defs><line x1="18" y1="18" x2="18" y2="7" stroke="url(#l1s3)" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="url(#l1s3)" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="url(#l1s3)" stroke-width="1.3" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c1s3)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">32</span>
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c1s2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient><linearGradient id="l1s2" x1="18" y1="18" x2="18" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1D6FEB" stop-opacity=".9"/><stop offset="100%" stop-color="#39D0D8" stop-opacity=".3"/></linearGradient></defs><line x1="18" y1="18" x2="18" y2="7" stroke="url(#l1s2)" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="url(#l1s2)" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="url(#l1s2)" stroke-width="1.3" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c1s2)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">20</span>
+    <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c1s1" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="18" x2="18" y2="7" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".8" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".8" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".8" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c1s1)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+  </div>
+
+  <div class="lockup">
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c1lk" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient><linearGradient id="l1lk" x1="18" y1="18" x2="18" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1D6FEB" stop-opacity=".9"/><stop offset="100%" stop-color="#39D0D8" stop-opacity=".3"/></linearGradient></defs><line x1="18" y1="18" x2="18" y2="7" stroke="url(#l1lk)" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="url(#l1lk)" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="url(#l1lk)" stroke-width="1.3" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c1lk)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="logotype"><span class="base">neurax</span><span class="ia">ia</span></span>
+  </div>
+
+  <p class="desc">Géométrie en <strong>triangle équilatéral</strong>. Symétrique, solide. Les 3 satellites à 120° crée un équilibre parfait. Le nœud central imposant affirme l'IA comme cœur du système.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 2 — Orbite circulaire
+     ══════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-top">
+    <span class="option-num">Option 2</span>
+    <span class="tag tag-green">Orbite circulaire</span>
+  </div>
+
+  <div class="icon-row">
+    <div class="bg-dark">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs>
+          <radialGradient id="c2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient>
+          <filter id="gc2"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="gs2"><feGaussianBlur stdDeviation=".8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <!-- Orbit ring -->
+        <circle cx="18" cy="18" r="12" stroke="#1D6FEB" stroke-width=".8" stroke-opacity=".2" fill="none" stroke-dasharray="2 3"/>
+        <!-- Satellites on orbit, no connecting lines -->
+        <circle cx="18" cy="6"  r="3"   stroke="#1D6FEB" stroke-width="1.4" fill="rgba(29,111,235,0.08)" filter="url(#gs2)"/>
+        <circle cx="28.4" cy="24" r="3" stroke="#39D0D8" stroke-width="1.4" fill="rgba(57,208,216,0.08)" filter="url(#gs2)"/>
+        <circle cx="7.6"  cy="24" r="3" stroke="#388BFD" stroke-width="1.4" fill="rgba(56,139,253,0.08)" filter="url(#gs2)"/>
+        <!-- Center -->
+        <circle cx="18" cy="18" r="6.5" fill="url(#c2)" filter="url(#gc2)"/>
+        <circle cx="15.8" cy="15.8" r="1.8" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+    <div class="bg-light">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs><radialGradient id="c2l" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs>
+        <circle cx="18" cy="18" r="12" stroke="#1D6FEB" stroke-width=".8" stroke-opacity=".2" fill="none" stroke-dasharray="2 3"/>
+        <circle cx="18" cy="6"  r="3"   stroke="#1D6FEB" stroke-width="1.4" fill="rgba(29,111,235,0.08)"/>
+        <circle cx="28.4" cy="24" r="3" stroke="#39D0D8" stroke-width="1.4" fill="rgba(57,208,216,0.08)"/>
+        <circle cx="7.6"  cy="24" r="3" stroke="#388BFD" stroke-width="1.4" fill="rgba(56,139,253,0.08)"/>
+        <circle cx="18" cy="18" r="6.5" fill="url(#c2l)"/>
+        <circle cx="15.8" cy="15.8" r="1.8" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="size-strip">
+    <span class="size-label">64</span>
+    <svg width="64" height="64" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c2s3" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><circle cx="18" cy="18" r="12" stroke="#1D6FEB" stroke-width=".8" stroke-opacity=".2" fill="none" stroke-dasharray="2 3"/><circle cx="18" cy="6" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="rgba(29,111,235,0.08)"/><circle cx="28.4" cy="24" r="3" stroke="#39D0D8" stroke-width="1.4" fill="rgba(57,208,216,0.08)"/><circle cx="7.6" cy="24" r="3" stroke="#388BFD" stroke-width="1.4" fill="rgba(56,139,253,0.08)"/><circle cx="18" cy="18" r="6.5" fill="url(#c2s3)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">32</span>
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c2s2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><circle cx="18" cy="18" r="12" stroke="#1D6FEB" stroke-width=".8" stroke-opacity=".2" fill="none" stroke-dasharray="2 3"/><circle cx="18" cy="6" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="rgba(29,111,235,0.08)"/><circle cx="28.4" cy="24" r="3" stroke="#39D0D8" stroke-width="1.4" fill="rgba(57,208,216,0.08)"/><circle cx="7.6" cy="24" r="3" stroke="#388BFD" stroke-width="1.4" fill="rgba(56,139,253,0.08)"/><circle cx="18" cy="18" r="6.5" fill="url(#c2s2)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">20</span>
+    <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c2s1" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><circle cx="18" cy="6" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28.4" cy="24" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="7.6" cy="24" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="6.5" fill="url(#c2s1)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+  </div>
+
+  <div class="lockup">
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c2lk" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><circle cx="18" cy="18" r="12" stroke="#1D6FEB" stroke-width=".8" stroke-opacity=".2" fill="none" stroke-dasharray="2 3"/><circle cx="18" cy="6" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="rgba(29,111,235,0.08)"/><circle cx="28.4" cy="24" r="3" stroke="#39D0D8" stroke-width="1.4" fill="rgba(57,208,216,0.08)"/><circle cx="7.6" cy="24" r="3" stroke="#388BFD" stroke-width="1.4" fill="rgba(56,139,253,0.08)"/><circle cx="18" cy="18" r="6.5" fill="url(#c2lk)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="logotype"><span class="base">neurax</span><span class="ia">ia</span></span>
+  </div>
+
+  <p class="desc">Les satellites <strong>flottent sur un anneau pointillé</strong>, sans connexion directe. Évoque une orbite planétaire — l'IA comme astre central. Léger, moderne, aérien.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 3 — Double anneau central
+     ══════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-top">
+    <span class="option-num">Option 3</span>
+    <span class="tag tag-blue">Double anneau</span>
+  </div>
+
+  <div class="icon-row">
+    <div class="bg-dark">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs>
+          <radialGradient id="c3" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient>
+          <linearGradient id="l3" x1="18" y1="18" x2="18" y2="5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1D6FEB" stop-opacity=".6"/><stop offset="100%" stop-color="#39D0D8" stop-opacity=".25"/></linearGradient>
+          <filter id="gc3"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <!-- Lines from outer ring edge -->
+        <line x1="18" y1="10" x2="18" y2="7"  stroke="url(#l3)" stroke-width="1.3" stroke-linecap="round"/>
+        <line x1="26" y1="22" x2="28" y2="25" stroke="url(#l3)" stroke-width="1.3" stroke-linecap="round"/>
+        <line x1="10" y1="22" x2="8"  y2="25" stroke="url(#l3)" stroke-width="1.3" stroke-linecap="round"/>
+        <!-- Outer ring of center -->
+        <circle cx="18" cy="18" r="9.5" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".3" fill="none"/>
+        <!-- Satellites -->
+        <circle cx="18" cy="7"  r="2.8" stroke="#1D6FEB" stroke-width="1.4" fill="none"/>
+        <circle cx="28" cy="25" r="2.8" stroke="#39D0D8" stroke-width="1.4" fill="none"/>
+        <circle cx="8"  cy="25" r="2.8" stroke="#388BFD" stroke-width="1.4" fill="none"/>
+        <!-- Small junction dots on ring -->
+        <circle cx="18" cy="8.5" r="1.2" fill="#1D6FEB" opacity=".7"/>
+        <circle cx="26.7" cy="23.3" r="1.2" fill="#39D0D8" opacity=".7"/>
+        <circle cx="9.3"  cy="23.3" r="1.2" fill="#388BFD" opacity=".7"/>
+        <!-- Center filled -->
+        <circle cx="18" cy="18" r="6.5" fill="url(#c3)" filter="url(#gc3)"/>
+        <circle cx="15.8" cy="15.8" r="1.8" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+    <div class="bg-light">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs><radialGradient id="c3l" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs>
+        <line x1="18" y1="10" x2="18" y2="7" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".5" stroke-linecap="round"/>
+        <line x1="26" y1="22" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".5" stroke-linecap="round"/>
+        <line x1="10" y1="22" x2="8" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".5" stroke-linecap="round"/>
+        <circle cx="18" cy="18" r="9.5" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".2" fill="none"/>
+        <circle cx="18" cy="7" r="2.8" stroke="#1D6FEB" stroke-width="1.4" fill="none"/>
+        <circle cx="28" cy="25" r="2.8" stroke="#39D0D8" stroke-width="1.4" fill="none"/>
+        <circle cx="8" cy="25" r="2.8" stroke="#388BFD" stroke-width="1.4" fill="none"/>
+        <circle cx="18" cy="8.5" r="1.2" fill="#1D6FEB" opacity=".6"/>
+        <circle cx="26.7" cy="23.3" r="1.2" fill="#39D0D8" opacity=".6"/>
+        <circle cx="9.3" cy="23.3" r="1.2" fill="#388BFD" opacity=".6"/>
+        <circle cx="18" cy="18" r="6.5" fill="url(#c3l)"/>
+        <circle cx="15.8" cy="15.8" r="1.8" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="size-strip">
+    <span class="size-label">64</span>
+    <svg width="64" height="64" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c3s3" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="10" x2="18" y2="7" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".6" stroke-linecap="round"/><line x1="26" y1="22" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".6" stroke-linecap="round"/><line x1="10" y1="22" x2="8" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".6" stroke-linecap="round"/><circle cx="18" cy="18" r="9.5" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".3" fill="none"/><circle cx="18" cy="7" r="2.8" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="2.8" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="2.8" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="8.5" r="1.2" fill="#1D6FEB" opacity=".7"/><circle cx="26.7" cy="23.3" r="1.2" fill="#39D0D8" opacity=".7"/><circle cx="9.3" cy="23.3" r="1.2" fill="#388BFD" opacity=".7"/><circle cx="18" cy="18" r="6.5" fill="url(#c3s3)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">32</span>
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c3s2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><circle cx="18" cy="18" r="9.5" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".3" fill="none"/><circle cx="18" cy="7" r="2.8" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="2.8" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="2.8" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="6.5" fill="url(#c3s2)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">20</span>
+    <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c3s1" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><circle cx="18" cy="7" r="2.8" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="2.8" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="2.8" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="6.5" fill="url(#c3s1)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+  </div>
+
+  <div class="lockup">
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c3lk" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><circle cx="18" cy="18" r="9.5" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".3" fill="none"/><circle cx="18" cy="7" r="2.8" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="2.8" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="2.8" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="8.5" r="1.2" fill="#1D6FEB" opacity=".7"/><circle cx="26.7" cy="23.3" r="1.2" fill="#39D0D8" opacity=".7"/><circle cx="9.3" cy="23.3" r="1.2" fill="#388BFD" opacity=".7"/><circle cx="18" cy="18" r="6.5" fill="url(#c3lk)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="logotype"><span class="base">neurax</span><span class="ia">ia</span></span>
+  </div>
+
+  <p class="desc">Un <strong>anneau externe</strong> entoure le nœud IA. Les lignes partent de l'anneau (pas du centre), avec de petits <strong>points de jonction</strong> sur le périmètre. Effet hub de données.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 4 — Réseau maillé (satellites reliés entre eux)
+     ══════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-top">
+    <span class="option-num">Option 4</span>
+    <span class="tag tag-gold">Réseau maillé</span>
+  </div>
+
+  <div class="icon-row">
+    <div class="bg-dark">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs>
+          <radialGradient id="c4" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient>
+          <filter id="gc4"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <!-- Satellite-to-satellite connections (dimmer) -->
+        <line x1="18" y1="7"  x2="28" y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/>
+        <line x1="28" y1="25" x2="8"  y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/>
+        <line x1="8"  y1="25" x2="18" y2="7"  stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/>
+        <!-- Center-to-satellite connections (brighter) -->
+        <line x1="18" y1="18" x2="18" y2="7"  stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="8"  y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/>
+        <!-- Satellites -->
+        <circle cx="18" cy="7"  r="3"   stroke="#1D6FEB" stroke-width="1.4" fill="none"/>
+        <circle cx="28" cy="25" r="3"   stroke="#39D0D8" stroke-width="1.4" fill="none"/>
+        <circle cx="8"  cy="25" r="3"   stroke="#388BFD" stroke-width="1.4" fill="none"/>
+        <!-- Center -->
+        <circle cx="18" cy="18" r="7"   fill="url(#c4)" filter="url(#gc4)"/>
+        <circle cx="15.5" cy="15.5" r="2" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+    <div class="bg-light">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs><radialGradient id="c4l" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs>
+        <line x1="18" y1="7"  x2="28" y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/>
+        <line x1="28" y1="25" x2="8"  y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/>
+        <line x1="8"  y1="25" x2="18" y2="7"  stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/>
+        <line x1="18" y1="18" x2="18" y2="7"  stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".7" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".7" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="8"  y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".7" stroke-linecap="round"/>
+        <circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/>
+        <circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/>
+        <circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/>
+        <circle cx="18" cy="18" r="7" fill="url(#c4l)"/>
+        <circle cx="15.5" cy="15.5" r="2" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="size-strip">
+    <span class="size-label">64</span>
+    <svg width="64" height="64" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c4s3" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="7" x2="28" y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/><line x1="28" y1="25" x2="8" y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/><line x1="8" y1="25" x2="18" y2="7" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/><line x1="18" y1="18" x2="18" y2="7" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c4s3)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">32</span>
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c4s2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="18" x2="18" y2="7" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c4s2)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">20</span>
+    <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c4s1" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="18" x2="18" y2="7" stroke="#1D6FEB" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c4s1)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+  </div>
+
+  <div class="lockup">
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c4lk" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="7" x2="28" y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/><line x1="28" y1="25" x2="8" y2="25" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/><line x1="8" y1="25" x2="18" y2="7" stroke="#39D0D8" stroke-width=".8" stroke-opacity=".2"/><line x1="18" y1="18" x2="18" y2="7" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><line x1="18" y1="18" x2="28" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><line x1="18" y1="18" x2="8" y2="25" stroke="#1D6FEB" stroke-width="1.3" stroke-opacity=".85" stroke-linecap="round"/><circle cx="18" cy="7" r="3" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="28" cy="25" r="3" stroke="#39D0D8" stroke-width="1.4" fill="none"/><circle cx="8" cy="25" r="3" stroke="#388BFD" stroke-width="1.4" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c4lk)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="logotype"><span class="base">neurax</span><span class="ia">ia</span></span>
+  </div>
+
+  <p class="desc">Les satellites sont <strong>aussi reliés entre eux</strong> (lignes fines et transparentes), formant un triangle de fond. Évoque un <strong>réseau neuronal complet</strong>. Plus dense, plus technique.</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     OPTION 5 — Asymétrique / Neurone
+     ══════════════════════════════════════════ -->
+<div class="card">
+  <div class="card-top">
+    <span class="option-num">Option 5</span>
+    <span class="tag tag-blue">Neurone asymétrique</span>
+  </div>
+
+  <div class="icon-row">
+    <div class="bg-dark">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs>
+          <radialGradient id="c5" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient>
+          <filter id="gc5"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="gs5"><feGaussianBlur stdDeviation=".7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <!-- 3 satellites at irregular positions + sizes -->
+        <!-- Large top-left: far -->
+        <line x1="18" y1="18" x2="6"  y2="5"  stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".8" stroke-linecap="round"/>
+        <!-- Medium right: mid -->
+        <line x1="18" y1="18" x2="31" y2="14" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".7" stroke-linecap="round"/>
+        <!-- Small bottom: close -->
+        <line x1="18" y1="18" x2="20" y2="30" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".6" stroke-linecap="round"/>
+
+        <circle cx="6"  cy="5"  r="3.5" stroke="#1D6FEB" stroke-width="1.4" fill="none" filter="url(#gs5)"/>
+        <circle cx="31" cy="14" r="2.5" stroke="#39D0D8" stroke-width="1.3" fill="none" filter="url(#gs5)"/>
+        <circle cx="20" cy="30" r="2"   stroke="#388BFD" stroke-width="1.2" fill="none" filter="url(#gs5)"/>
+
+        <circle cx="18" cy="18" r="7" fill="url(#c5)" filter="url(#gc5)"/>
+        <circle cx="15.5" cy="15.5" r="2" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+    <div class="bg-light">
+      <svg width="80" height="80" viewBox="0 0 36 36" fill="none">
+        <defs><radialGradient id="c5l" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs>
+        <line x1="18" y1="18" x2="6"  y2="5"  stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".6" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="31" y2="14" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".5" stroke-linecap="round"/>
+        <line x1="18" y1="18" x2="20" y2="30" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".4" stroke-linecap="round"/>
+        <circle cx="6"  cy="5"  r="3.5" stroke="#1D6FEB" stroke-width="1.4" fill="none"/>
+        <circle cx="31" cy="14" r="2.5" stroke="#39D0D8" stroke-width="1.3" fill="none"/>
+        <circle cx="20" cy="30" r="2"   stroke="#388BFD" stroke-width="1.2" fill="none"/>
+        <circle cx="18" cy="18" r="7" fill="url(#c5l)"/>
+        <circle cx="15.5" cy="15.5" r="2" fill="white" opacity=".2"/>
+        <text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="size-strip">
+    <span class="size-label">64</span>
+    <svg width="64" height="64" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c5s3" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="18" x2="6" y2="5" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".8" stroke-linecap="round"/><line x1="18" y1="18" x2="31" y2="14" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".7" stroke-linecap="round"/><line x1="18" y1="18" x2="20" y2="30" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".6" stroke-linecap="round"/><circle cx="6" cy="5" r="3.5" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="31" cy="14" r="2.5" stroke="#39D0D8" stroke-width="1.3" fill="none"/><circle cx="20" cy="30" r="2" stroke="#388BFD" stroke-width="1.2" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c5s3)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">32</span>
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c5s2" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="18" x2="6" y2="5" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".8" stroke-linecap="round"/><line x1="18" y1="18" x2="31" y2="14" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".7" stroke-linecap="round"/><line x1="18" y1="18" x2="20" y2="30" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".6" stroke-linecap="round"/><circle cx="6" cy="5" r="3.5" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="31" cy="14" r="2.5" stroke="#39D0D8" stroke-width="1.3" fill="none"/><circle cx="20" cy="30" r="2" stroke="#388BFD" stroke-width="1.2" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c5s2)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="size-label">20</span>
+    <svg width="20" height="20" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c5s1" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="18" x2="6" y2="5" stroke="#1D6FEB" stroke-width="1.2" stroke-linecap="round"/><line x1="18" y1="18" x2="31" y2="14" stroke="#1D6FEB" stroke-width="1.2" stroke-linecap="round"/><line x1="18" y1="18" x2="20" y2="30" stroke="#1D6FEB" stroke-width="1.2" stroke-linecap="round"/><circle cx="6" cy="5" r="3.5" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="31" cy="14" r="2.5" stroke="#39D0D8" stroke-width="1.3" fill="none"/><circle cx="20" cy="30" r="2" stroke="#388BFD" stroke-width="1.2" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c5s1)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+  </div>
+
+  <div class="lockup">
+    <svg width="32" height="32" viewBox="0 0 36 36" fill="none"><defs><radialGradient id="c5lk" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#388BFD"/><stop offset="100%" stop-color="#1256C9"/></radialGradient></defs><line x1="18" y1="18" x2="6" y2="5" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".8" stroke-linecap="round"/><line x1="18" y1="18" x2="31" y2="14" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".7" stroke-linecap="round"/><line x1="18" y1="18" x2="20" y2="30" stroke="#1D6FEB" stroke-width="1.2" stroke-opacity=".6" stroke-linecap="round"/><circle cx="6" cy="5" r="3.5" stroke="#1D6FEB" stroke-width="1.4" fill="none"/><circle cx="31" cy="14" r="2.5" stroke="#39D0D8" stroke-width="1.3" fill="none"/><circle cx="20" cy="30" r="2" stroke="#388BFD" stroke-width="1.2" fill="none"/><circle cx="18" cy="18" r="7" fill="url(#c5lk)"/><text x="18" y="21" text-anchor="middle" fill="white" font-size="6.5" font-weight="700" font-family="Space Grotesk,sans-serif" letter-spacing=".5">IA</text></svg>
+    <span class="logotype"><span class="base">neurax</span><span class="ia">ia</span></span>
+  </div>
+
+  <p class="desc">Satellites <strong>irréguliers en position et en taille</strong> — comme un vrai neurone biologique. Plus organique, moins corporate. Évoque l'anatomie du système nerveux.</p>
+</div>
+
+</div>
+
+<p style="text-align:center;color:#8B949E;font-size:11px;margin-top:48px;">Chaque option : fond sombre + fond clair · 64px · 32px · 20px · lockup avec logotype</p>
+</body>
+</html>

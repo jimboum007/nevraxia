@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<title>Benchmarking — Background & Illustration Options</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#080C12; font-family:'Inter',system-ui,sans-serif; color:#F0F6FC; }
+h1 { text-align:center; padding:48px 0 8px; font-size:20px; font-weight:600; letter-spacing:-.02em; }
+.intro { text-align:center; color:#8B949E; font-size:13px; margin-bottom:48px; }
+.section-title { text-align:center; font-size:16px; font-weight:600; color:#388BFD; letter-spacing:.06em; text-transform:uppercase; margin:40px 0 24px; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:1100px; margin:0 auto; padding:0 24px 80px; }
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.card { border-radius:16px; overflow:hidden; border:1px solid #21282F; }
+.preview {
+  position:relative; height:320px;
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden; background:#0D1117;
+}
+.content { position:relative; z-index:2; display:grid; grid-template-columns:1fr 1fr; gap:24px; padding:32px; width:100%; }
+.col-text { }
+.badge { display:inline-flex; align-items:center; gap:6px; background:rgba(29,111,235,.12); border:1px solid rgba(29,111,235,.3); color:#388BFD; font-size:10px; font-weight:600; letter-spacing:.07em; text-transform:uppercase; padding:3px 10px; border-radius:100px; margin-bottom:10px; }
+.col-text h2 { font-size:17px; font-weight:700; letter-spacing:-.02em; margin-bottom:8px; color:#F0F6FC; line-height:1.25; }
+.col-text p { font-size:11px; color:#8B949E; line-height:1.5; margin-bottom:12px; }
+.points { display:flex; flex-direction:column; gap:7px; }
+.point { display:flex; align-items:flex-start; gap:8px; }
+.point-icon { width:22px; height:22px; border-radius:6px; background:rgba(29,111,235,.12); border:1px solid rgba(29,111,235,.2); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:10px; }
+.point-text { font-size:10px; color:#8B949E; line-height:1.4; padding-top:3px; }
+.col-visual { display:flex; align-items:center; justify-content:center; }
+.visual-box { width:100%; border-radius:12px; overflow:hidden; background:#161B22; border:1px solid #30363D; }
+.label-bar { padding:14px 18px; background:#0D1117; border-top:1px solid #21282F; display:flex; align-items:center; justify-content:space-between; }
+.label-bar strong { font-size:13px; color:#F0F6FC; }
+.label-bar span { font-size:11px; color:#8B949E; }
+.num { width:26px; height:26px; border-radius:50%; background:rgba(29,111,235,.15); border:1px solid rgba(29,111,235,.3); color:#388BFD; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+</style>
+</head>
+<body>
+
+<h1>Benchmarking — Propositions</h1>
+<p class="intro">A: 4 options de background · B: propositions d'illustrations pour chaque point</p>
+
+<!-- ══════════════════════════════════════════════
+     PARTIE A — BACKGROUNDS
+══════════════════════════════════════════════ -->
+<p class="section-title">A — Backgrounds</p>
+<div class="grid">
+
+<!-- BG 1 — Aurora mesh -->
+<div class="card">
+  <div class="preview" id="bg1">
+    <canvas id="c1" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+    <!-- Aurora blobs -->
+    <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none">
+      <div style="position:absolute;width:420px;height:280px;border-radius:50%;background:radial-gradient(ellipse,rgba(29,111,235,.28) 0%,transparent 70%);left:-60px;top:20px;animation:drift1 8s ease-in-out infinite alternate"></div>
+      <div style="position:absolute;width:320px;height:220px;border-radius:50%;background:radial-gradient(ellipse,rgba(57,208,216,.18) 0%,transparent 70%);right:20px;bottom:10px;animation:drift2 10s ease-in-out infinite alternate"></div>
+      <div style="position:absolute;width:260px;height:180px;border-radius:50%;background:radial-gradient(ellipse,rgba(136,99,237,.14) 0%,transparent 70%);left:40%;top:10px;animation:drift3 12s ease-in-out infinite alternate"></div>
+      <!-- Grid overlay -->
+      <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.12" viewBox="0 0 100 60" preserveAspectRatio="xMidYMid slice">
+        <defs><pattern id="g" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0H0V10" fill="none" stroke="#1D6FEB" stroke-width=".3"/></pattern></defs>
+        <rect width="100" height="60" fill="url(#g)"/>
+      </svg>
+    </div>
+    <div class="content">
+      <div class="col-text">
+        <div class="badge">⭐ Innovation médicale</div>
+        <h2>Mesurez-vous aux meilleurs<br/>centres européens</h2>
+        <p>Vos protocoles sont analysés par l'IA et intégrés dans une base de données paneuropéenne.</p>
+        <div class="points">
+          <div class="point"><div class="point-icon">🗄️</div><div class="point-text">Base de données paneuropéenne</div></div>
+          <div class="point"><div class="point-icon">🤖</div><div class="point-text">Analyse IA en temps réel</div></div>
+          <div class="point"><div class="point-icon">📊</div><div class="point-text">Comparaison anonymisée</div></div>
+          <div class="point"><div class="point-icon">🔒</div><div class="point-text">Données protégées RGPD</div></div>
+        </div>
+      </div>
+      <div class="col-visual">
+        <div class="visual-box" style="padding:16px">
+          <div style="font-size:10px;font-weight:600;color:#F0F6FC;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center">Réseau Neuraxia EU <span style="color:#3FB950;font-size:9px">● Live</span></div>
+          <svg viewBox="0 0 120 80" style="width:100%;opacity:.9">
+            <circle cx="60" cy="42" r="30" fill="none" stroke="#1D2A3A" stroke-width=".5"/>
+            <circle cx="60" cy="42" r="20" fill="none" stroke="#1D2A3A" stroke-width=".3"/>
+            <line x1="46" y1="20" x2="60" y2="42" stroke="rgba(29,111,235,.3)" stroke-width=".4"/>
+            <line x1="74" y1="22" x2="60" y2="42" stroke="rgba(29,111,235,.3)" stroke-width=".4"/>
+            <line x1="82" y1="38" x2="60" y2="42" stroke="rgba(29,111,235,.3)" stroke-width=".4"/>
+            <line x1="50" y1="60" x2="60" y2="42" stroke="rgba(57,208,216,.25)" stroke-width=".4"/>
+            <line x1="70" y1="65" x2="60" y2="42" stroke="rgba(57,208,216,.25)" stroke-width=".4"/>
+            <line x1="38" y1="52" x2="60" y2="42" stroke="rgba(29,111,235,.2)" stroke-width=".4"/>
+            <circle cx="46" cy="20" r="2.5" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="74" cy="22" r="2.5" fill="none" stroke="#39D0D8" stroke-width=".8"/>
+            <circle cx="82" cy="38" r="2" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="50" cy="60" r="2" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="70" cy="65" r="2.5" fill="none" stroke="#39D0D8" stroke-width=".8"/>
+            <circle cx="38" cy="52" r="2" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="60" cy="42" r="4.5" fill="rgba(29,111,235,.6)" stroke="#1D6FEB" stroke-width="1.2"/>
+          </svg>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-top:6px">
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">27</div><div style="font-size:8px;color:#8B949E">Centres</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">4.2k</div><div style="font-size:8px;color:#8B949E">Protocoles</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">12k+</div><div style="font-size:8px;color:#8B949E">Comparaisons</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="label-bar">
+    <div style="display:flex;align-items:center;gap:10px"><div class="num">1</div><strong>Aurora mesh</strong></div>
+    <span>Blobs de couleur flottants + grille — style Vercel/Linear</span>
+  </div>
+</div>
+
+<!-- BG 2 — Topographie + scan horizontal -->
+<div class="card">
+  <div class="preview" style="background:#0A0F16">
+    <div style="position:absolute;inset:0">
+      <!-- Topo lines -->
+      <svg style="position:absolute;inset:0;width:100%;height:100%" viewBox="0 0 800 320" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="tg1" cx="35%" cy="50%" r="45%">
+            <stop offset="0%" stop-color="#1D6FEB" stop-opacity=".22"/>
+            <stop offset="100%" stop-color="#1D6FEB" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="tg2" cx="70%" cy="40%" r="35%">
+            <stop offset="0%" stop-color="#39D0D8" stop-opacity=".14"/>
+            <stop offset="100%" stop-color="#39D0D8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="280" cy="160" rx="40" ry="28" fill="none" stroke="#1D6FEB" stroke-opacity=".7" stroke-width=".9"/>
+        <ellipse cx="280" cy="160" rx="80" ry="56" fill="none" stroke="#1D6FEB" stroke-opacity=".5" stroke-width=".8"/>
+        <ellipse cx="280" cy="160" rx="126" ry="88" fill="none" stroke="#1D6FEB" stroke-opacity=".38" stroke-width=".8"/>
+        <ellipse cx="280" cy="160" rx="176" ry="122" fill="none" stroke="#1D6FEB" stroke-opacity=".28" stroke-width=".7"/>
+        <ellipse cx="280" cy="160" rx="230" ry="158" fill="none" stroke="#39D0D8" stroke-opacity=".18" stroke-width=".7"/>
+        <ellipse cx="280" cy="160" rx="288" ry="196" fill="none" stroke="#39D0D8" stroke-opacity=".12" stroke-width=".6"/>
+        <ellipse cx="580" cy="90" rx="28" ry="20" fill="none" stroke="#39D0D8" stroke-opacity=".5" stroke-width=".8"/>
+        <ellipse cx="580" cy="90" rx="60" ry="44" fill="none" stroke="#39D0D8" stroke-opacity=".3" stroke-width=".7"/>
+        <ellipse cx="580" cy="90" rx="100" ry="72" fill="none" stroke="#39D0D8" stroke-opacity=".18" stroke-width=".6"/>
+        <circle cx="280" cy="160" r="4" fill="#1D6FEB" opacity=".9"/>
+        <circle cx="280" cy="160" r="8" fill="#1D6FEB" opacity=".2"/>
+        <circle cx="580" cy="90" r="3" fill="#39D0D8" opacity=".8"/>
+        <ellipse cx="280" cy="160" rx="320" ry="200" fill="url(#tg1)"/>
+        <ellipse cx="580" cy="90" rx="200" ry="160" fill="url(#tg2)"/>
+      </svg>
+    </div>
+    <div class="content">
+      <div class="col-text">
+        <div class="badge">⭐ Innovation médicale</div>
+        <h2>Mesurez-vous aux meilleurs<br/>centres européens</h2>
+        <p>Vos protocoles sont analysés par l'IA et intégrés dans une base de données paneuropéenne.</p>
+        <div class="points">
+          <div class="point"><div class="point-icon">🗄️</div><div class="point-text">Base de données paneuropéenne</div></div>
+          <div class="point"><div class="point-icon">🤖</div><div class="point-text">Analyse IA en temps réel</div></div>
+          <div class="point"><div class="point-icon">📊</div><div class="point-text">Comparaison anonymisée</div></div>
+          <div class="point"><div class="point-icon">🔒</div><div class="point-text">Données protégées RGPD</div></div>
+        </div>
+      </div>
+      <div class="col-visual">
+        <div class="visual-box" style="padding:16px">
+          <div style="font-size:10px;font-weight:600;color:#F0F6FC;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center">Réseau Neuraxia EU <span style="color:#3FB950;font-size:9px">● Live</span></div>
+          <svg viewBox="0 0 120 80" style="width:100%;opacity:.9">
+            <circle cx="60" cy="42" r="30" fill="none" stroke="#1D2A3A" stroke-width=".5"/>
+            <line x1="46" y1="20" x2="60" y2="42" stroke="rgba(29,111,235,.3)" stroke-width=".4"/>
+            <line x1="74" y1="22" x2="60" y2="42" stroke="rgba(29,111,235,.3)" stroke-width=".4"/>
+            <line x1="82" y1="38" x2="60" y2="42" stroke="rgba(57,208,216,.25)" stroke-width=".4"/>
+            <line x1="50" y1="60" x2="60" y2="42" stroke="rgba(29,111,235,.25)" stroke-width=".4"/>
+            <line x1="70" y1="65" x2="60" y2="42" stroke="rgba(57,208,216,.25)" stroke-width=".4"/>
+            <circle cx="46" cy="20" r="2.5" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="74" cy="22" r="2.5" fill="none" stroke="#39D0D8" stroke-width=".8"/>
+            <circle cx="82" cy="38" r="2" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="50" cy="60" r="2" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="70" cy="65" r="2.5" fill="none" stroke="#39D0D8" stroke-width=".8"/>
+            <circle cx="60" cy="42" r="4.5" fill="rgba(29,111,235,.6)" stroke="#1D6FEB" stroke-width="1.2"/>
+          </svg>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-top:6px">
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">27</div><div style="font-size:8px;color:#8B949E">Centres</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">4.2k</div><div style="font-size:8px;color:#8B949E">Protocoles</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">12k+</div><div style="font-size:8px;color:#8B949E">Comparaisons</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="label-bar">
+    <div style="display:flex;align-items:center;gap:10px"><div class="num">2</div><strong>Topographie</strong></div>
+    <span>Lignes de contour concentriques + points centraux lumineux</span>
+  </div>
+</div>
+
+<!-- BG 3 — Gradient diagonal deep blue/purple -->
+<div class="card">
+  <div class="preview" style="background:linear-gradient(135deg,#06111F 0%,#0D1117 40%,#080D1A 70%,#0A0716 100%)">
+    <div style="position:absolute;inset:0">
+      <div style="position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(ellipse,rgba(29,111,235,.2) 0%,transparent 65%);left:-100px;top:-100px"></div>
+      <div style="position:absolute;width:400px;height:300px;border-radius:50%;background:radial-gradient(ellipse,rgba(136,99,237,.18) 0%,transparent 65%);right:-50px;bottom:-50px"></div>
+      <div style="position:absolute;width:300px;height:200px;border-radius:50%;background:radial-gradient(ellipse,rgba(57,208,216,.12) 0%,transparent 65%);right:25%;top:10%"></div>
+      <!-- Dot grid subtle -->
+      <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.18" viewBox="0 0 200 100" preserveAspectRatio="xMidYMid slice">
+        <defs><pattern id="dots3" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="0.8" fill="#1D6FEB"/></pattern></defs>
+        <rect width="200" height="100" fill="url(#dots3)"/>
+      </svg>
+    </div>
+    <div class="content">
+      <div class="col-text">
+        <div class="badge">⭐ Innovation médicale</div>
+        <h2>Mesurez-vous aux meilleurs<br/>centres européens</h2>
+        <p>Vos protocoles sont analysés par l'IA et intégrés dans une base de données paneuropéenne.</p>
+        <div class="points">
+          <div class="point"><div class="point-icon">🗄️</div><div class="point-text">Base de données paneuropéenne</div></div>
+          <div class="point"><div class="point-icon">🤖</div><div class="point-text">Analyse IA en temps réel</div></div>
+          <div class="point"><div class="point-icon">📊</div><div class="point-text">Comparaison anonymisée</div></div>
+          <div class="point"><div class="point-icon">🔒</div><div class="point-text">Données protégées RGPD</div></div>
+        </div>
+      </div>
+      <div class="col-visual">
+        <div class="visual-box" style="padding:16px;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.08)">
+          <div style="font-size:10px;font-weight:600;color:#F0F6FC;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center">Réseau Neuraxia EU <span style="color:#3FB950;font-size:9px">● Live</span></div>
+          <svg viewBox="0 0 120 80" style="width:100%">
+            <circle cx="60" cy="42" r="30" fill="none" stroke="rgba(255,255,255,.08)" stroke-width=".5"/>
+            <line x1="46" y1="20" x2="60" y2="42" stroke="rgba(29,111,235,.4)" stroke-width=".5"/>
+            <line x1="74" y1="22" x2="60" y2="42" stroke="rgba(29,111,235,.4)" stroke-width=".5"/>
+            <line x1="82" y1="38" x2="60" y2="42" stroke="rgba(136,99,237,.4)" stroke-width=".5"/>
+            <line x1="50" y1="60" x2="60" y2="42" stroke="rgba(57,208,216,.35)" stroke-width=".5"/>
+            <line x1="70" y1="65" x2="60" y2="42" stroke="rgba(57,208,216,.35)" stroke-width=".5"/>
+            <line x1="38" y1="52" x2="60" y2="42" stroke="rgba(136,99,237,.3)" stroke-width=".5"/>
+            <circle cx="46" cy="20" r="2.5" fill="#8863ED" opacity=".8"/>
+            <circle cx="74" cy="22" r="2.5" fill="#1D6FEB" opacity=".8"/>
+            <circle cx="82" cy="38" r="2" fill="#39D0D8" opacity=".8"/>
+            <circle cx="50" cy="60" r="2" fill="#1D6FEB" opacity=".8"/>
+            <circle cx="70" cy="65" r="2.5" fill="#8863ED" opacity=".8"/>
+            <circle cx="38" cy="52" r="2" fill="#39D0D8" opacity=".8"/>
+            <circle cx="60" cy="42" r="5" fill="rgba(29,111,235,.7)" stroke="#1D6FEB" stroke-width="1.5"/>
+          </svg>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-top:6px">
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(136,99,237,.12)"><div style="font-size:11px;font-weight:700;color:#A78BFA">27</div><div style="font-size:8px;color:#8B949E">Centres</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.12)"><div style="font-size:11px;font-weight:700;color:#388BFD">4.2k</div><div style="font-size:8px;color:#8B949E">Protocoles</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(57,208,216,.1)"><div style="font-size:11px;font-weight:700;color:#39D0D8">12k+</div><div style="font-size:8px;color:#8B949E">Comparaisons</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="label-bar">
+    <div style="display:flex;align-items:center;gap:10px"><div class="num">3</div><strong>Gradient profond bleu-violet</strong></div>
+    <span>Fond sombre riche + dot grid + orbes colorées — médical premium</span>
+  </div>
+</div>
+
+<!-- BG 4 — Hexagones + scan line animé -->
+<div class="card">
+  <div class="preview" style="background:#090E17">
+    <div style="position:absolute;inset:0;overflow:hidden">
+      <canvas id="hexbg" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+      <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 40% 50%,rgba(29,111,235,.14) 0%,transparent 70%)"></div>
+    </div>
+    <div class="content">
+      <div class="col-text">
+        <div class="badge">⭐ Innovation médicale</div>
+        <h2>Mesurez-vous aux meilleurs<br/>centres européens</h2>
+        <p>Vos protocoles sont analysés par l'IA et intégrés dans une base de données paneuropéenne.</p>
+        <div class="points">
+          <div class="point"><div class="point-icon">🗄️</div><div class="point-text">Base de données paneuropéenne</div></div>
+          <div class="point"><div class="point-icon">🤖</div><div class="point-text">Analyse IA en temps réel</div></div>
+          <div class="point"><div class="point-icon">📊</div><div class="point-text">Comparaison anonymisée</div></div>
+          <div class="point"><div class="point-icon">🔒</div><div class="point-text">Données protégées RGPD</div></div>
+        </div>
+      </div>
+      <div class="col-visual">
+        <div class="visual-box" style="padding:16px">
+          <div style="font-size:10px;font-weight:600;color:#F0F6FC;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center">Réseau Neuraxia EU <span style="color:#3FB950;font-size:9px">● Live</span></div>
+          <svg viewBox="0 0 120 80" style="width:100%;opacity:.9">
+            <circle cx="60" cy="42" r="30" fill="none" stroke="#1D2A3A" stroke-width=".5"/>
+            <line x1="46" y1="20" x2="60" y2="42" stroke="rgba(29,111,235,.3)" stroke-width=".4"/>
+            <line x1="74" y1="22" x2="60" y2="42" stroke="rgba(29,111,235,.3)" stroke-width=".4"/>
+            <line x1="82" y1="38" x2="60" y2="42" stroke="rgba(57,208,216,.25)" stroke-width=".4"/>
+            <line x1="50" y1="60" x2="60" y2="42" stroke="rgba(29,111,235,.25)" stroke-width=".4"/>
+            <line x1="70" y1="65" x2="60" y2="42" stroke="rgba(57,208,216,.25)" stroke-width=".4"/>
+            <circle cx="46" cy="20" r="2.5" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="74" cy="22" r="2.5" fill="none" stroke="#39D0D8" stroke-width=".8"/>
+            <circle cx="82" cy="38" r="2" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="50" cy="60" r="2" fill="none" stroke="#1D6FEB" stroke-width=".8"/>
+            <circle cx="70" cy="65" r="2.5" fill="none" stroke="#39D0D8" stroke-width=".8"/>
+            <circle cx="60" cy="42" r="4.5" fill="rgba(29,111,235,.6)" stroke="#1D6FEB" stroke-width="1.2"/>
+          </svg>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-top:6px">
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">27</div><div style="font-size:8px;color:#8B949E">Centres</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">4.2k</div><div style="font-size:8px;color:#8B949E">Protocoles</div></div>
+            <div style="text-align:center;padding:4px;border-radius:6px;background:rgba(29,111,235,.08)"><div style="font-size:11px;font-weight:700;color:#388BFD">12k+</div><div style="font-size:8px;color:#8B949E">Comparaisons</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="label-bar">
+    <div style="display:flex;align-items:center;gap:10px"><div class="num">4</div><strong>Hexagones (cohérent Hero)</strong></div>
+    <span>Même grille hex que le Hero — continuité visuelle forte</span>
+  </div>
+</div>
+
+</div><!-- /grid -->
+
+<!-- ══════════════════════════════════════════════
+     PARTIE B — ILLUSTRATIONS PAR POINT
+══════════════════════════════════════════════ -->
+<p class="section-title">B — Illustrations pour chaque point (icônes SVG)</p>
+<div class="grid" style="padding-bottom:120px">
+
+  <!-- Point 1 — Base de données -->
+  <div class="card">
+    <div class="preview" style="background:#0D1117;height:200px">
+      <div style="position:relative;z-index:2;display:flex;gap:32px;align-items:center;justify-content:center;width:100%;padding:24px">
+        <!-- Current: emoji 🗄️ -->
+        <div style="text-align:center">
+          <div style="font-size:32px;margin-bottom:8px">🗄️</div>
+          <div style="font-size:10px;color:#8B949E">Actuel</div>
+        </div>
+        <!-- Option A: Database cylinders SVG -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(29,111,235,0.12)"/>
+            <ellipse cx="24" cy="14" rx="10" ry="4" fill="rgba(29,111,235,0.3)" stroke="#1D6FEB" stroke-width="1.2"/>
+            <rect x="14" y="14" width="20" height="10" fill="rgba(29,111,235,0.15)"/>
+            <ellipse cx="24" cy="24" rx="10" ry="4" fill="rgba(29,111,235,0.25)" stroke="#1D6FEB" stroke-width="1.2"/>
+            <rect x="14" y="24" width="20" height="10" fill="rgba(29,111,235,0.1)"/>
+            <ellipse cx="24" cy="34" rx="10" ry="4" fill="rgba(29,111,235,0.2)" stroke="#1D6FEB" stroke-width="1.2"/>
+            <circle cx="37" cy="11" r="4" fill="#3FB950" opacity=".9"/>
+            <path d="M35 11l1.2 1.5L39 9.5" stroke="white" stroke-width="1" stroke-linecap="round"/>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option A</div>
+        </div>
+        <!-- Option B: EU network nodes -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(29,111,235,0.12)"/>
+            <circle cx="24" cy="24" r="7" fill="rgba(29,111,235,0.5)" stroke="#1D6FEB" stroke-width="1.3"/>
+            <line x1="24" y1="17" x2="24" y2="10" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".6"/>
+            <line x1="30.1" y1="20.5" x2="36" y2="14" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".6"/>
+            <line x1="30.1" y1="27.5" x2="37" y2="33" stroke="#39D0D8" stroke-width="1" stroke-opacity=".6"/>
+            <line x1="24" y1="31" x2="24" y2="38" stroke="#39D0D8" stroke-width="1" stroke-opacity=".6"/>
+            <line x1="17.9" y1="27.5" x2="11" y2="33" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".6"/>
+            <line x1="17.9" y1="20.5" x2="12" y2="14" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".6"/>
+            <circle cx="24" cy="9" r="2.5" fill="none" stroke="#1D6FEB" stroke-width="1.2"/>
+            <circle cx="37" cy="13" r="2.5" fill="none" stroke="#39D0D8" stroke-width="1.2"/>
+            <circle cx="38" cy="33" r="2.5" fill="none" stroke="#39D0D8" stroke-width="1.2"/>
+            <circle cx="24" cy="39" r="2.5" fill="none" stroke="#1D6FEB" stroke-width="1.2"/>
+            <circle cx="10" cy="33" r="2.5" fill="none" stroke="#1D6FEB" stroke-width="1.2"/>
+            <circle cx="11" cy="13" r="2.5" fill="none" stroke="#1D6FEB" stroke-width="1.2"/>
+            <text x="24" y="27" text-anchor="middle" fill="white" font-size="5.5" font-weight="700">EU</text>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option B</div>
+        </div>
+      </div>
+    </div>
+    <div class="label-bar">
+      <div style="display:flex;align-items:center;gap:10px"><div class="num">🗄️</div><strong>Point 1 — Base de données EU</strong></div>
+      <span>Actuel (emoji) · A (cylinders) · B (réseau EU)</span>
+    </div>
+  </div>
+
+  <!-- Point 2 — Analyse IA -->
+  <div class="card">
+    <div class="preview" style="background:#0D1117;height:200px">
+      <div style="position:relative;z-index:2;display:flex;gap:32px;align-items:center;justify-content:center;width:100%;padding:24px">
+        <div style="text-align:center">
+          <div style="font-size:32px;margin-bottom:8px">🤖</div>
+          <div style="font-size:10px;color:#8B949E">Actuel</div>
+        </div>
+        <!-- Option A: Brain/neural network -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(136,99,237,0.12)"/>
+            <circle cx="24" cy="24" r="6" fill="rgba(136,99,237,0.4)" stroke="#8863ED" stroke-width="1.2"/>
+            <circle cx="12" cy="18" r="3.5" fill="none" stroke="#8863ED" stroke-width="1" stroke-opacity=".7"/>
+            <circle cx="36" cy="18" r="3.5" fill="none" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".7"/>
+            <circle cx="12" cy="30" r="3.5" fill="none" stroke="#1D6FEB" stroke-width="1" stroke-opacity=".7"/>
+            <circle cx="36" cy="30" r="3.5" fill="none" stroke="#39D0D8" stroke-width="1" stroke-opacity=".7"/>
+            <circle cx="24" cy="10" r="3" fill="none" stroke="#8863ED" stroke-width="1" stroke-opacity=".6"/>
+            <circle cx="24" cy="38" r="3" fill="none" stroke="#39D0D8" stroke-width="1" stroke-opacity=".6"/>
+            <line x1="18" y1="24" x2="12" y2="18" stroke="#8863ED" stroke-width=".7" stroke-opacity=".5"/>
+            <line x1="30" y1="24" x2="36" y2="18" stroke="#1D6FEB" stroke-width=".7" stroke-opacity=".5"/>
+            <line x1="18" y1="24" x2="12" y2="30" stroke="#1D6FEB" stroke-width=".7" stroke-opacity=".5"/>
+            <line x1="30" y1="24" x2="36" y2="30" stroke="#39D0D8" stroke-width=".7" stroke-opacity=".5"/>
+            <line x1="24" y1="18" x2="24" y2="13" stroke="#8863ED" stroke-width=".7" stroke-opacity=".5"/>
+            <line x1="24" y1="30" x2="24" y2="35" stroke="#39D0D8" stroke-width=".7" stroke-opacity=".5"/>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option A</div>
+        </div>
+        <!-- Option B: Pulse/waveform -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(136,99,237,0.12)"/>
+            <path d="M6 24h6l3-8 4 16 4-12 3 8 3-4 3 8 4-16 3 8H42" stroke="#8863ED" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="24" cy="24" r="3" fill="#8863ED" opacity=".8"/>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option B</div>
+        </div>
+      </div>
+    </div>
+    <div class="label-bar">
+      <div style="display:flex;align-items:center;gap:10px"><div class="num">🤖</div><strong>Point 2 — Analyse IA</strong></div>
+      <span>Actuel (emoji) · A (réseau neuronal) · B (ECG/signal)</span>
+    </div>
+  </div>
+
+  <!-- Point 3 — Comparaison -->
+  <div class="card">
+    <div class="preview" style="background:#0D1117;height:200px">
+      <div style="position:relative;z-index:2;display:flex;gap:32px;align-items:center;justify-content:center;width:100%;padding:24px">
+        <div style="text-align:center">
+          <div style="font-size:32px;margin-bottom:8px">📊</div>
+          <div style="font-size:10px;color:#8B949E">Actuel</div>
+        </div>
+        <!-- Option A: Bar chart comparison -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(227,179,65,0.12)"/>
+            <rect x="8" y="28" width="6" height="12" rx="1.5" fill="#E3B341" opacity=".9"/>
+            <rect x="16" y="20" width="6" height="20" rx="1.5" fill="#E3B341" opacity=".6"/>
+            <rect x="24" y="14" width="6" height="26" rx="1.5" fill="#1D6FEB" opacity=".9"/>
+            <rect x="32" y="18" width="6" height="22" rx="1.5" fill="#1D6FEB" opacity=".5"/>
+            <line x1="6" y1="40" x2="42" y2="40" stroke="#30363D" stroke-width=".8"/>
+            <path d="M28 10l3 3-3 3M28 13h8" stroke="#3FB950" stroke-width="1" stroke-linecap="round"/>
+            <circle cx="36" cy="13" r="3" fill="rgba(63,185,80,.2)" stroke="#3FB950" stroke-width=".8"/>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option A</div>
+        </div>
+        <!-- Option B: Radar/spider chart -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(227,179,65,0.12)"/>
+            <polygon points="24,8 37,18 32,33 16,33 11,18" fill="none" stroke="#30363D" stroke-width=".8"/>
+            <polygon points="24,14 31,20 28,29 20,29 17,20" fill="none" stroke="#30363D" stroke-width=".5"/>
+            <polygon points="24,10 35,20 30,32 18,32 13,20" fill="rgba(29,111,235,.15)" stroke="#1D6FEB" stroke-width=".9"/>
+            <polygon points="24,12 29,19 27,28 21,28 19,19" fill="rgba(227,179,65,.15)" stroke="#E3B341" stroke-width=".9" stroke-dasharray="1.5 1"/>
+            <circle cx="24" cy="8" r="1.5" fill="#1D6FEB"/>
+            <circle cx="37" cy="18" r="1.5" fill="#1D6FEB"/>
+            <circle cx="32" cy="33" r="1.5" fill="#1D6FEB"/>
+            <circle cx="16" cy="33" r="1.5" fill="#1D6FEB"/>
+            <circle cx="11" cy="18" r="1.5" fill="#1D6FEB"/>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option B</div>
+        </div>
+      </div>
+    </div>
+    <div class="label-bar">
+      <div style="display:flex;align-items:center;gap:10px"><div class="num">📊</div><strong>Point 3 — Comparaison anonymisée</strong></div>
+      <span>Actuel (emoji) · A (barres comparatives) · B (radar chart)</span>
+    </div>
+  </div>
+
+  <!-- Point 4 — RGPD -->
+  <div class="card">
+    <div class="preview" style="background:#0D1117;height:200px">
+      <div style="position:relative;z-index:2;display:flex;gap:32px;align-items:center;justify-content:center;width:100%;padding:24px">
+        <div style="text-align:center">
+          <div style="font-size:32px;margin-bottom:8px">🔒</div>
+          <div style="font-size:10px;color:#8B949E">Actuel</div>
+        </div>
+        <!-- Option A: Shield -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(63,185,80,0.12)"/>
+            <path d="M24 8L10 14v10c0 8.5 5.9 16.4 14 18.5C32.1 40.4 38 32.5 38 24V14L24 8z" fill="rgba(63,185,80,.15)" stroke="#3FB950" stroke-width="1.3" stroke-linejoin="round"/>
+            <path d="M18 24l4 4 8-8" stroke="#3FB950" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option A</div>
+        </div>
+        <!-- Option B: Lock with data streams -->
+        <div style="text-align:center">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style="display:block;margin:0 auto 8px">
+            <rect width="48" height="48" rx="12" fill="rgba(63,185,80,0.12)"/>
+            <rect x="14" y="22" width="20" height="16" rx="3" fill="rgba(63,185,80,.2)" stroke="#3FB950" stroke-width="1.2"/>
+            <path d="M18 22v-5a6 6 0 0112 0v5" stroke="#3FB950" stroke-width="1.3" stroke-linecap="round"/>
+            <circle cx="24" cy="30" r="2.5" fill="#3FB950"/>
+            <line x1="24" y1="32.5" x2="24" y2="35" stroke="#3FB950" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="6" y1="16" x2="10" y2="16" stroke="#3FB950" stroke-width=".8" stroke-opacity=".4" stroke-linecap="round"/>
+            <line x1="6" y1="20" x2="11" y2="20" stroke="#3FB950" stroke-width=".8" stroke-opacity=".3" stroke-linecap="round"/>
+            <line x1="38" y1="16" x2="42" y2="16" stroke="#3FB950" stroke-width=".8" stroke-opacity=".4" stroke-linecap="round"/>
+            <line x1="37" y1="20" x2="42" y2="20" stroke="#3FB950" stroke-width=".8" stroke-opacity=".3" stroke-linecap="round"/>
+          </svg>
+          <div style="font-size:10px;color:#8B949E">Option B</div>
+        </div>
+      </div>
+    </div>
+    <div class="label-bar">
+      <div style="display:flex;align-items:center;gap:10px"><div class="num">🔒</div><strong>Point 4 — Protection RGPD</strong></div>
+      <span>Actuel (emoji) · A (bouclier + check) · B (cadenas + streams)</span>
+    </div>
+  </div>
+
+</div>
+
+<style>
+@keyframes drift1{0%{transform:translate(0,0) scale(1)}100%{transform:translate(30px,20px) scale(1.1)}}
+@keyframes drift2{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-20px,-15px) scale(1.08)}}
+@keyframes drift3{0%{transform:translate(0,0) scale(1)}100%{transform:translate(15px,25px) scale(1.06)}}
+</style>
+
+<script>
+// Hex canvas for option 4
+function drawHexCanvas(canvas) {
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = canvas.offsetWidth * dpr;
+  canvas.height = canvas.offsetHeight * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  const w = canvas.offsetWidth, h = canvas.offsetHeight;
+  const r = 22, colStep = r * Math.sqrt(3), rowStep = r * 1.5;
+  const cx = w * 0.38, cy = h * 0.5;
+  const maxD = Math.sqrt(w*w+h*h)*0.55;
+  const cols = Math.ceil(w/colStep)+3, rows = Math.ceil(h/rowStep)+3;
+  for(let row=-2;row<=rows;row++){
+    for(let col=-2;col<=cols;col++){
+      const x=col*colStep+(row%2!==0?colStep/2:0), y=row*rowStep;
+      const dist=Math.sqrt((x-cx)**2+(y-cy)**2);
+      const fade=Math.max(0,1-dist/maxD);
+      if(fade<0.04)continue;
+      ctx.beginPath();
+      for(let i=0;i<6;i++){const a=(Math.PI/3)*i-Math.PI/6;ctx.lineTo(x+r*Math.cos(a),y+r*Math.sin(a));}
+      ctx.closePath();
+      ctx.strokeStyle=`rgba(29,111,235,${0.05+fade*0.18})`;
+      ctx.lineWidth=0.8;
+      ctx.stroke();
+      const hash=((row*31+col*17)%100+100)%100;
+      if(hash<4&&fade>.35){ctx.fillStyle=`rgba(29,111,235,${0.07*fade})`;ctx.fill();}
+      else if(hash<7&&fade>.55){ctx.fillStyle=`rgba(57,208,216,${0.05*fade})`;ctx.fill();}
+    }
+  }
+}
+const hexCanvas = document.getElementById('hexbg');
+if(hexCanvas) { setTimeout(()=>drawHexCanvas(hexCanvas), 50); }
+</script>
+</body>
+</html>

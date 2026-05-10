@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Hero Background Options — Neuraxia</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #080C12; font-family: 'Inter', system-ui, sans-serif; color: #F0F6FC; }
+
+  h1 { text-align: center; padding: 48px 0 8px; font-size: 22px; font-weight: 600; letter-spacing: -0.02em; color: #F0F6FC; }
+  .subtitle { text-align: center; color: #8B949E; font-size: 14px; margin-bottom: 48px; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; }
+  @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+
+  .card { border-radius: 16px; overflow: hidden; border: 1px solid #21282F; }
+  .card-preview {
+    position: relative;
+    height: 280px;
+    background: #0D1117;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .card-preview svg.bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .card-preview .overlay {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(13,17,23,0) 0%, #0D1117 100%);
+  }
+  .card-content {
+    position: relative; z-index: 2;
+    text-align: center; padding: 24px;
+  }
+  .badge {
+    display: inline-block; background: rgba(29,111,235,0.15);
+    border: 1px solid rgba(29,111,235,0.3); color: #388BFD;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 4px 12px; border-radius: 100px;
+    margin-bottom: 14px;
+  }
+  .card-content h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 8px; }
+  .card-content p { font-size: 13px; color: #8B949E; max-width: 260px; line-height: 1.5; }
+  .grad { background: linear-gradient(135deg, #1D6FEB, #39D0D8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+  .card-label {
+    padding: 16px 20px;
+    background: #0D1117;
+    border-top: 1px solid #21282F;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .card-label strong { font-size: 14px; color: #F0F6FC; }
+  .card-label span { font-size: 12px; color: #8B949E; }
+  .num {
+    width: 28px; height: 28px; border-radius: 50%;
+    background: rgba(29,111,235,0.15); border: 1px solid rgba(29,111,235,0.3);
+    color: #388BFD; font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Hero Background — Options</h1>
+<p class="subtitle">5 propositions de backgrounds géométriques pour le Hero Neuraxia</p>
+
+<div class="grid">
+
+  <!-- ───────────────────────────────────────────
+       OPTION 1 — GRILLE ISO + LUEUR BLEUE
+  ─────────────────────────────────────────────── -->
+  <div class="card">
+    <div class="card-preview">
+      <svg class="bg" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow1" cx="50%" cy="45%" r="50%">
+            <stop offset="0%" stop-color="#1D6FEB" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#1D6FEB" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- Isometric grid lines -->
+        <!-- Lines going down-right (60°) -->
+        <g stroke="#1D6FEB" stroke-opacity="0.12" stroke-width="0.8">
+          <line x1="-100" y1="0" x2="900" y2="0"/>
+          <line x1="-100" y1="60" x2="900" y2="60"/>
+          <line x1="-100" y1="120" x2="900" y2="120"/>
+          <line x1="-100" y1="180" x2="900" y2="180"/>
+          <line x1="-100" y1="240" x2="900" y2="240"/>
+          <line x1="-100" y1="300" x2="900" y2="300"/>
+          <line x1="-100" y1="360" x2="900" y2="360"/>
+          <line x1="-100" y1="420" x2="900" y2="420"/>
+          <line x1="-100" y1="480" x2="900" y2="480"/>
+          <line x1="-100" y1="540" x2="900" y2="540"/>
+        </g>
+        <!-- Diagonal lines NW→SE -->
+        <g stroke="#1D6FEB" stroke-opacity="0.1" stroke-width="0.8" transform="rotate(-30 400 280)">
+          <line x1="-300" y1="-200" x2="1100" y2="-200"/>
+          <line x1="-300" y1="-130" x2="1100" y2="-130"/>
+          <line x1="-300" y1="-60" x2="1100" y2="-60"/>
+          <line x1="-300" y1="10" x2="1100" y2="10"/>
+          <line x1="-300" y1="80" x2="1100" y2="80"/>
+          <line x1="-300" y1="150" x2="1100" y2="150"/>
+          <line x1="-300" y1="220" x2="1100" y2="220"/>
+          <line x1="-300" y1="290" x2="1100" y2="290"/>
+          <line x1="-300" y1="360" x2="1100" y2="360"/>
+          <line x1="-300" y1="430" x2="1100" y2="430"/>
+          <line x1="-300" y1="500" x2="1100" y2="500"/>
+          <line x1="-300" y1="570" x2="1100" y2="570"/>
+          <line x1="-300" y1="640" x2="1100" y2="640"/>
+          <line x1="-300" y1="710" x2="1100" y2="710"/>
+          <line x1="-300" y1="780" x2="1100" y2="780"/>
+        </g>
+        <!-- Diagonal lines NE→SW -->
+        <g stroke="#39D0D8" stroke-opacity="0.07" stroke-width="0.8" transform="rotate(30 400 280)">
+          <line x1="-300" y1="-200" x2="1100" y2="-200"/>
+          <line x1="-300" y1="-130" x2="1100" y2="-130"/>
+          <line x1="-300" y1="-60" x2="1100" y2="-60"/>
+          <line x1="-300" y1="10" x2="1100" y2="10"/>
+          <line x1="-300" y1="80" x2="1100" y2="80"/>
+          <line x1="-300" y1="150" x2="1100" y2="150"/>
+          <line x1="-300" y1="220" x2="1100" y2="220"/>
+          <line x1="-300" y1="290" x2="1100" y2="290"/>
+          <line x1="-300" y1="360" x2="1100" y2="360"/>
+          <line x1="-300" y1="430" x2="1100" y2="430"/>
+          <line x1="-300" y1="500" x2="1100" y2="500"/>
+          <line x1="-300" y1="570" x2="1100" y2="570"/>
+        </g>
+        <!-- Glow -->
+        <ellipse cx="400" cy="200" rx="340" ry="200" fill="url(#glow1)"/>
+        <!-- Accent dots at intersections -->
+        <circle cx="400" cy="120" r="2" fill="#1D6FEB" opacity="0.5"/>
+        <circle cx="330" cy="180" r="1.5" fill="#39D0D8" opacity="0.4"/>
+        <circle cx="470" cy="180" r="1.5" fill="#39D0D8" opacity="0.4"/>
+        <circle cx="260" cy="240" r="1.5" fill="#1D6FEB" opacity="0.3"/>
+        <circle cx="540" cy="240" r="1.5" fill="#1D6FEB" opacity="0.3"/>
+      </svg>
+      <div class="overlay"></div>
+      <div class="card-content">
+        <div class="badge">Solution IA</div>
+        <h2>L'intelligence médicale<br/><span class="grad">pour votre structure</span></h2>
+        <p>Rapports automatisés, pilotage économique, benchmarking européen.</p>
+      </div>
+    </div>
+    <div class="card-label">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="num">1</div>
+        <strong>Grille isométrique</strong>
+      </div>
+      <span>Double diagonale + lueur centrale</span>
+    </div>
+  </div>
+
+  <!-- ───────────────────────────────────────────
+       OPTION 2 — HEXAGONES WIREFRAME
+  ─────────────────────────────────────────────── -->
+  <div class="card">
+    <div class="card-preview">
+      <svg class="bg" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow2" cx="50%" cy="45%" r="50%">
+            <stop offset="0%" stop-color="#1D6FEB" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#1D6FEB" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- Hexagon grid -->
+        <g fill="none" stroke="#1D6FEB" stroke-opacity="0.14" stroke-width="0.9">
+          <!-- Row 0 -->
+          <polygon points="120,40 160,17 200,40 200,86 160,109 120,86"/>
+          <polygon points="200,40 240,17 280,40 280,86 240,109 200,86"/>
+          <polygon points="280,40 320,17 360,40 360,86 320,109 280,86"/>
+          <polygon points="360,40 400,17 440,40 440,86 400,109 360,86"/>
+          <polygon points="440,40 480,17 520,40 520,86 480,109 440,86"/>
+          <polygon points="520,40 560,17 600,40 600,86 560,109 520,86"/>
+          <polygon points="600,40 640,17 680,40 680,86 640,109 600,86"/>
+          <!-- Row 1 (offset) -->
+          <polygon points="80,109 120,86 160,109 160,155 120,178 80,155"/>
+          <polygon points="160,109 200,86 240,109 240,155 200,178 160,155"/>
+          <polygon points="240,109 280,86 320,109 320,155 280,178 240,155"/>
+          <polygon points="320,109 360,86 400,109 400,155 360,178 320,155"/>
+          <polygon points="400,109 440,86 480,109 480,155 440,178 400,155"/>
+          <polygon points="480,109 520,86 560,109 560,155 520,178 480,155"/>
+          <polygon points="560,109 600,86 640,109 640,155 600,178 560,155"/>
+          <polygon points="640,109 680,86 720,109 720,155 680,178 640,155"/>
+          <!-- Row 2 -->
+          <polygon points="120,178 160,155 200,178 200,224 160,247 120,224"/>
+          <polygon points="200,178 240,155 280,178 280,224 240,247 200,224"/>
+          <polygon points="280,178 320,155 360,178 360,224 320,247 280,224"/>
+          <polygon points="360,178 400,155 440,178 440,224 400,247 360,224"/>
+          <polygon points="440,178 480,155 520,178 520,224 480,247 440,224"/>
+          <polygon points="520,178 560,155 600,178 600,224 560,247 520,224"/>
+          <polygon points="600,178 640,155 680,178 680,224 640,247 600,224"/>
+          <!-- Row 3 (offset) -->
+          <polygon points="80,247 120,224 160,247 160,293 120,316 80,293"/>
+          <polygon points="160,247 200,224 240,247 240,293 200,316 160,293"/>
+          <polygon points="240,247 280,224 320,247 320,293 280,316 240,293"/>
+          <polygon points="320,247 360,224 400,247 400,293 360,316 320,293"/>
+          <polygon points="400,247 440,224 480,247 480,293 440,316 400,293"/>
+          <polygon points="480,247 520,224 560,247 560,293 520,316 480,293"/>
+          <polygon points="560,247 600,224 640,247 640,293 600,316 560,293"/>
+          <polygon points="640,247 680,224 720,247 720,293 680,316 640,293"/>
+          <!-- Row 4 -->
+          <polygon points="120,316 160,293 200,316 200,362 160,385 120,362"/>
+          <polygon points="200,316 240,293 280,316 280,362 240,385 200,362"/>
+          <polygon points="280,316 320,293 360,316 360,362 320,385 280,362"/>
+          <polygon points="360,316 400,293 440,316 440,362 400,385 360,362"/>
+          <polygon points="440,316 480,293 520,316 520,362 480,385 440,362"/>
+          <polygon points="520,316 560,293 600,316 600,362 560,385 520,362"/>
+          <polygon points="600,316 640,293 680,316 680,362 640,385 600,362"/>
+          <!-- Row 5 (offset) -->
+          <polygon points="80,385 120,362 160,385 160,431 120,454 80,431"/>
+          <polygon points="160,385 200,362 240,385 240,431 200,454 160,431"/>
+          <polygon points="240,385 280,362 320,385 320,431 280,454 240,431"/>
+          <polygon points="320,385 360,362 400,385 400,431 360,454 320,431"/>
+          <polygon points="400,385 440,362 480,385 480,431 440,454 400,431"/>
+          <polygon points="480,385 520,362 560,385 560,431 520,454 480,431"/>
+          <polygon points="560,385 600,362 640,385 640,431 600,454 560,431"/>
+          <polygon points="640,385 680,362 720,385 720,431 680,454 640,431"/>
+        </g>
+        <!-- Highlighted hexagons -->
+        <polygon points="360,178 400,155 440,178 440,224 400,247 360,224" fill="rgba(29,111,235,0.08)" stroke="#1D6FEB" stroke-opacity="0.4" stroke-width="1"/>
+        <polygon points="400,109 440,86 480,109 480,155 440,178 400,155" fill="rgba(57,208,216,0.06)" stroke="#39D0D8" stroke-opacity="0.35" stroke-width="1"/>
+        <polygon points="320,247 360,224 400,247 400,293 360,316 320,293" fill="rgba(29,111,235,0.06)" stroke="#1D6FEB" stroke-opacity="0.3" stroke-width="1"/>
+        <!-- Glow -->
+        <ellipse cx="400" cy="210" rx="300" ry="190" fill="url(#glow2)"/>
+      </svg>
+      <div class="overlay"></div>
+      <div class="card-content">
+        <div class="badge">Solution IA</div>
+        <h2>L'intelligence médicale<br/><span class="grad">pour votre structure</span></h2>
+        <p>Rapports automatisés, pilotage économique, benchmarking européen.</p>
+      </div>
+    </div>
+    <div class="card-label">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="num">2</div>
+        <strong>Hexagones wireframe</strong>
+      </div>
+      <span>Grille hex + cellules accentuées</span>
+    </div>
+  </div>
+
+  <!-- ───────────────────────────────────────────
+       OPTION 3 — TOPOGRAPHIE (lignes de contour)
+  ─────────────────────────────────────────────── -->
+  <div class="card">
+    <div class="card-preview">
+      <svg class="bg" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow3" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#1D6FEB" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#1D6FEB" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="glow3b" cx="70%" cy="30%" r="35%">
+            <stop offset="0%" stop-color="#39D0D8" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#39D0D8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- Topo contour lines — concentric organic shapes around center -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="400" cy="260" rx="40"  ry="28"  stroke="#1D6FEB" stroke-opacity="0.7" stroke-width="1"/>
+          <ellipse cx="400" cy="260" rx="82"  ry="58"  stroke="#1D6FEB" stroke-opacity="0.55" stroke-width="0.9"/>
+          <ellipse cx="400" cy="260" rx="130" ry="92"  stroke="#1D6FEB" stroke-opacity="0.42" stroke-width="0.9"/>
+          <ellipse cx="400" cy="260" rx="182" ry="130" stroke="#1D6FEB" stroke-opacity="0.32" stroke-width="0.8"/>
+          <ellipse cx="400" cy="260" rx="238" ry="168" stroke="#1D6FEB" stroke-opacity="0.24" stroke-width="0.8"/>
+          <ellipse cx="400" cy="260" rx="298" ry="206" stroke="#39D0D8" stroke-opacity="0.18" stroke-width="0.8"/>
+          <ellipse cx="400" cy="260" rx="362" ry="246" stroke="#39D0D8" stroke-opacity="0.13" stroke-width="0.7"/>
+          <ellipse cx="400" cy="260" rx="430" ry="288" stroke="#1D6FEB" stroke-opacity="0.10" stroke-width="0.7"/>
+          <ellipse cx="400" cy="260" rx="502" ry="332" stroke="#1D6FEB" stroke-opacity="0.08" stroke-width="0.7"/>
+          <!-- Secondary peak top-right -->
+          <ellipse cx="620" cy="110" rx="28"  ry="20"  stroke="#39D0D8" stroke-opacity="0.5" stroke-width="0.8"/>
+          <ellipse cx="620" cy="110" rx="60"  ry="44"  stroke="#39D0D8" stroke-opacity="0.35" stroke-width="0.7"/>
+          <ellipse cx="620" cy="110" rx="100" ry="74"  stroke="#39D0D8" stroke-opacity="0.22" stroke-width="0.7"/>
+          <!-- Secondary peak bottom-left -->
+          <ellipse cx="170" cy="430" rx="24"  ry="18"  stroke="#1D6FEB" stroke-opacity="0.4" stroke-width="0.8"/>
+          <ellipse cx="170" cy="430" rx="52"  ry="38"  stroke="#1D6FEB" stroke-opacity="0.28" stroke-width="0.7"/>
+          <ellipse cx="170" cy="430" rx="88"  ry="64"  stroke="#1D6FEB" stroke-opacity="0.18" stroke-width="0.7"/>
+        </g>
+        <ellipse cx="400" cy="260" rx="320" ry="220" fill="url(#glow3)"/>
+        <ellipse cx="620" cy="110" rx="200" ry="160" fill="url(#glow3b)"/>
+        <!-- Center dot -->
+        <circle cx="400" cy="260" r="3.5" fill="#1D6FEB" opacity="0.9"/>
+        <circle cx="400" cy="260" r="7" fill="#1D6FEB" opacity="0.25"/>
+      </svg>
+      <div class="overlay"></div>
+      <div class="card-content">
+        <div class="badge">Solution IA</div>
+        <h2>L'intelligence médicale<br/><span class="grad">pour votre structure</span></h2>
+        <p>Rapports automatisés, pilotage économique, benchmarking européen.</p>
+      </div>
+    </div>
+    <div class="card-label">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="num">3</div>
+        <strong>Topographie</strong>
+      </div>
+      <span>Lignes de contour concentriques — élégant</span>
+    </div>
+  </div>
+
+  <!-- ───────────────────────────────────────────
+       OPTION 4 — CIRCUIT BOARD / PCB
+  ─────────────────────────────────────────────── -->
+  <div class="card">
+    <div class="card-preview">
+      <svg class="bg" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow4" cx="50%" cy="45%" r="50%">
+            <stop offset="0%" stop-color="#1D6FEB" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#1D6FEB" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- PCB traces — horizontal/vertical lines with 90° turns -->
+        <g stroke="#1D6FEB" stroke-opacity="0.22" stroke-width="1" fill="none" stroke-linecap="square">
+          <!-- Trace 1 -->
+          <polyline points="0,80 180,80 180,160 340,160 340,80 560,80 560,200 700,200"/>
+          <!-- Trace 2 -->
+          <polyline points="0,200 120,200 120,280 280,280 280,200 400,200 400,320 560,320 560,200"/>
+          <!-- Trace 3 -->
+          <polyline points="0,320 100,320 100,400 260,400 260,320 420,320 420,440 680,440 680,320 800,320"/>
+          <!-- Trace 4 -->
+          <polyline points="200,0 200,80 340,80"/>
+          <!-- Trace 5 -->
+          <polyline points="400,0 400,40 500,40 500,160 680,160 680,80 800,80"/>
+          <!-- Trace 6 -->
+          <polyline points="600,0 600,40 700,40 700,160"/>
+          <!-- Trace 7 -->
+          <polyline points="0,440 80,440 80,480 200,480 200,560"/>
+          <!-- Trace 8 -->
+          <polyline points="300,560 300,480 460,480 460,400"/>
+          <!-- Trace 9 -->
+          <polyline points="600,560 600,480 740,480 740,400 800,400"/>
+          <!-- Trace 10 thin -->
+          <polyline points="140,0 140,40 60,40 60,160 160,160" stroke-opacity="0.14" stroke-width="0.7"/>
+          <polyline points="480,560 480,520 380,520 380,440" stroke-opacity="0.14" stroke-width="0.7"/>
+        </g>
+        <!-- Cyan accent traces -->
+        <g stroke="#39D0D8" stroke-opacity="0.14" stroke-width="0.8" fill="none" stroke-linecap="square">
+          <polyline points="0,160 60,160 60,240 180,240 180,160"/>
+          <polyline points="700,280 640,280 640,360 780,360 780,440 800,440"/>
+          <polyline points="320,0 320,40 220,40 220,120"/>
+        </g>
+        <!-- Nodes (pads) at intersections -->
+        <g fill="#1D6FEB">
+          <circle cx="180" cy="80"  r="3.5" opacity="0.8"/>
+          <circle cx="340" cy="160" r="3.5" opacity="0.8"/>
+          <circle cx="560" cy="200" r="3.5" opacity="0.8"/>
+          <circle cx="280" cy="280" r="3.5" opacity="0.8"/>
+          <circle cx="400" cy="320" r="3.5" opacity="0.8"/>
+          <circle cx="260" cy="400" r="3.5" opacity="0.8"/>
+          <circle cx="460" cy="480" r="3.5" opacity="0.7"/>
+          <circle cx="680" cy="440" r="3.5" opacity="0.7"/>
+          <circle cx="120" cy="280" r="3"   opacity="0.6"/>
+          <circle cx="500" cy="160" r="3"   opacity="0.6"/>
+          <circle cx="740" cy="400" r="3"   opacity="0.6"/>
+        </g>
+        <!-- Larger "chip" rectangles -->
+        <rect x="310" y="54"  width="60" height="52" rx="4" fill="none" stroke="#1D6FEB" stroke-opacity="0.3" stroke-width="1.2"/>
+        <rect x="460" y="100" width="48" height="40" rx="4" fill="none" stroke="#39D0D8" stroke-opacity="0.25" stroke-width="1"/>
+        <rect x="150" y="234" width="60" height="46" rx="4" fill="none" stroke="#1D6FEB" stroke-opacity="0.25" stroke-width="1"/>
+        <rect x="370" y="370" width="52" height="44" rx="4" fill="none" stroke="#1D6FEB" stroke-opacity="0.25" stroke-width="1"/>
+        <!-- Glow -->
+        <ellipse cx="400" cy="230" rx="310" ry="200" fill="url(#glow4)"/>
+      </svg>
+      <div class="overlay"></div>
+      <div class="card-content">
+        <div class="badge">Solution IA</div>
+        <h2>L'intelligence médicale<br/><span class="grad">pour votre structure</span></h2>
+        <p>Rapports automatisés, pilotage économique, benchmarking européen.</p>
+      </div>
+    </div>
+    <div class="card-label">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="num">4</div>
+        <strong>Circuit board</strong>
+      </div>
+      <span>Traces PCB + composants — tech/médical</span>
+    </div>
+  </div>
+
+  <!-- ───────────────────────────────────────────
+       OPTION 5 — GRILLE DE POINTS (dot grid)
+  ─────────────────────────────────────────────── -->
+  <div class="card" style="grid-column: 1 / -1">
+    <div class="card-preview" style="height: 300px">
+      <svg class="bg" viewBox="0 0 1100 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="glow5" cx="50%" cy="45%" r="50%">
+            <stop offset="0%" stop-color="#1D6FEB" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#1D6FEB" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="glow5b" cx="50%" cy="45%" r="50%">
+            <stop offset="0%" stop-color="#0D1117" stop-opacity="0"/>
+            <stop offset="60%" stop-color="#0D1117" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#0D1117" stop-opacity="0.85"/>
+          </radialGradient>
+        </defs>
+        <!-- Dot grid: 36px spacing, varies opacity with distance from center -->
+        <g fill="#1D6FEB">
+          <!-- Generate dots — using a simplified sparse version -->
+          <!-- Row y=40 -->
+          <circle cx="50"  cy="40"  r="1.1" opacity="0.12"/>
+          <circle cx="86"  cy="40"  r="1.1" opacity="0.14"/>
+          <circle cx="122" cy="40"  r="1.2" opacity="0.16"/>
+          <circle cx="158" cy="40"  r="1.2" opacity="0.18"/>
+          <circle cx="194" cy="40"  r="1.3" opacity="0.20"/>
+          <circle cx="230" cy="40"  r="1.3" opacity="0.22"/>
+          <circle cx="266" cy="40"  r="1.4" opacity="0.25"/>
+          <circle cx="302" cy="40"  r="1.4" opacity="0.28"/>
+          <circle cx="338" cy="40"  r="1.5" opacity="0.30"/>
+          <circle cx="374" cy="40"  r="1.5" opacity="0.33"/>
+          <circle cx="410" cy="40"  r="1.6" opacity="0.35"/>
+          <circle cx="446" cy="40"  r="1.6" opacity="0.37"/>
+          <circle cx="482" cy="40"  r="1.7" opacity="0.38"/>
+          <circle cx="518" cy="40"  r="1.7" opacity="0.37"/>
+          <circle cx="554" cy="40"  r="1.6" opacity="0.35"/>
+          <circle cx="590" cy="40"  r="1.5" opacity="0.33"/>
+          <circle cx="626" cy="40"  r="1.5" opacity="0.30"/>
+          <circle cx="662" cy="40"  r="1.4" opacity="0.27"/>
+          <circle cx="698" cy="40"  r="1.4" opacity="0.24"/>
+          <circle cx="734" cy="40"  r="1.3" opacity="0.21"/>
+          <circle cx="770" cy="40"  r="1.3" opacity="0.18"/>
+          <circle cx="806" cy="40"  r="1.2" opacity="0.16"/>
+          <circle cx="842" cy="40"  r="1.2" opacity="0.14"/>
+          <circle cx="878" cy="40"  r="1.1" opacity="0.12"/>
+          <circle cx="914" cy="40"  r="1.1" opacity="0.11"/>
+          <circle cx="950" cy="40"  r="1.0" opacity="0.10"/>
+          <circle cx="986" cy="40"  r="1.0" opacity="0.09"/>
+          <circle cx="1022" cy="40" r="1.0" opacity="0.08"/>
+          <!-- Row y=80 -->
+          <circle cx="50"  cy="80"  r="1.2" opacity="0.14"/>
+          <circle cx="86"  cy="80"  r="1.3" opacity="0.17"/>
+          <circle cx="122" cy="80"  r="1.4" opacity="0.20"/>
+          <circle cx="158" cy="80"  r="1.5" opacity="0.24"/>
+          <circle cx="194" cy="80"  r="1.6" opacity="0.28"/>
+          <circle cx="230" cy="80"  r="1.7" opacity="0.32"/>
+          <circle cx="266" cy="80"  r="1.8" opacity="0.36"/>
+          <circle cx="302" cy="80"  r="1.9" opacity="0.40"/>
+          <circle cx="338" cy="80"  r="2.0" opacity="0.44"/>
+          <circle cx="374" cy="80"  r="2.0" opacity="0.47"/>
+          <circle cx="410" cy="80"  r="2.1" opacity="0.50"/>
+          <circle cx="446" cy="80"  r="2.1" opacity="0.52"/>
+          <circle cx="482" cy="80"  r="2.2" opacity="0.53"/>
+          <circle cx="518" cy="80"  r="2.2" opacity="0.52"/>
+          <circle cx="554" cy="80"  r="2.1" opacity="0.50"/>
+          <circle cx="590" cy="80"  r="2.0" opacity="0.47"/>
+          <circle cx="626" cy="80"  r="2.0" opacity="0.44"/>
+          <circle cx="662" cy="80"  r="1.9" opacity="0.40"/>
+          <circle cx="698" cy="80"  r="1.8" opacity="0.36"/>
+          <circle cx="734" cy="80"  r="1.7" opacity="0.32"/>
+          <circle cx="770" cy="80"  r="1.6" opacity="0.28"/>
+          <circle cx="806" cy="80"  r="1.5" opacity="0.24"/>
+          <circle cx="842" cy="80"  r="1.4" opacity="0.20"/>
+          <circle cx="878" cy="80"  r="1.3" opacity="0.17"/>
+          <circle cx="914" cy="80"  r="1.2" opacity="0.14"/>
+          <circle cx="950" cy="80"  r="1.1" opacity="0.12"/>
+          <circle cx="986" cy="80"  r="1.1" opacity="0.10"/>
+          <circle cx="1022" cy="80" r="1.0" opacity="0.09"/>
+          <!-- Row y=160 -->
+          <circle cx="50"  cy="160" r="1.3" opacity="0.17"/>
+          <circle cx="122" cy="160" r="1.6" opacity="0.24"/>
+          <circle cx="194" cy="160" r="1.9" opacity="0.32"/>
+          <circle cx="266" cy="160" r="2.2" opacity="0.42"/>
+          <circle cx="338" cy="160" r="2.5" opacity="0.54"/>
+          <circle cx="410" cy="160" r="2.7" opacity="0.64"/>
+          <circle cx="482" cy="160" r="2.9" opacity="0.70"/>
+          <circle cx="554" cy="160" r="2.7" opacity="0.64"/>
+          <circle cx="626" cy="160" r="2.5" opacity="0.54"/>
+          <circle cx="698" cy="160" r="2.2" opacity="0.42"/>
+          <circle cx="770" cy="160" r="1.9" opacity="0.32"/>
+          <circle cx="842" cy="160" r="1.6" opacity="0.24"/>
+          <circle cx="914" cy="160" r="1.3" opacity="0.17"/>
+          <circle cx="986" cy="160" r="1.1" opacity="0.12"/>
+          <!-- Row y=240 -->
+          <circle cx="50"  cy="240" r="1.4" opacity="0.20"/>
+          <circle cx="122" cy="240" r="1.8" opacity="0.30"/>
+          <circle cx="194" cy="240" r="2.2" opacity="0.42"/>
+          <circle cx="266" cy="240" r="2.6" opacity="0.56"/>
+          <circle cx="338" cy="240" r="3.0" opacity="0.70"/>
+          <circle cx="410" cy="240" r="3.3" opacity="0.82"/>
+          <circle cx="482" cy="240" r="3.5" opacity="0.90"/>
+          <circle cx="554" cy="240" r="3.3" opacity="0.82"/>
+          <circle cx="626" cy="240" r="3.0" opacity="0.70"/>
+          <circle cx="698" cy="240" r="2.6" opacity="0.56"/>
+          <circle cx="770" cy="240" r="2.2" opacity="0.42"/>
+          <circle cx="842" cy="240" r="1.8" opacity="0.30"/>
+          <circle cx="914" cy="240" r="1.4" opacity="0.20"/>
+          <circle cx="986" cy="240" r="1.2" opacity="0.14"/>
+          <!-- Center bright row y=280 -->
+          <circle cx="122" cy="280" r="1.9" opacity="0.32"/>
+          <circle cx="194" cy="280" r="2.4" opacity="0.46"/>
+          <circle cx="266" cy="280" r="2.9" opacity="0.62"/>
+          <circle cx="338" cy="280" r="3.3" opacity="0.78"/>
+          <circle cx="410" cy="280" r="3.6" opacity="0.92"/>
+          <circle cx="482" cy="280" r="3.8" opacity="1.00"/>
+          <circle cx="554" cy="280" r="3.6" opacity="0.92"/>
+          <circle cx="626" cy="280" r="3.3" opacity="0.78"/>
+          <circle cx="698" cy="280" r="2.9" opacity="0.62"/>
+          <circle cx="770" cy="280" r="2.4" opacity="0.46"/>
+          <circle cx="842" cy="280" r="1.9" opacity="0.32"/>
+          <circle cx="914" cy="280" r="1.5" opacity="0.22"/>
+          <!-- Row y=360 -->
+          <circle cx="50"  cy="360" r="1.4" opacity="0.19"/>
+          <circle cx="122" cy="360" r="1.8" opacity="0.29"/>
+          <circle cx="194" cy="360" r="2.2" opacity="0.40"/>
+          <circle cx="266" cy="360" r="2.6" opacity="0.53"/>
+          <circle cx="338" cy="360" r="3.0" opacity="0.67"/>
+          <circle cx="410" cy="360" r="3.3" opacity="0.80"/>
+          <circle cx="482" cy="360" r="3.5" opacity="0.88"/>
+          <circle cx="554" cy="360" r="3.3" opacity="0.80"/>
+          <circle cx="626" cy="360" r="3.0" opacity="0.67"/>
+          <circle cx="698" cy="360" r="2.6" opacity="0.53"/>
+          <circle cx="770" cy="360" r="2.2" opacity="0.40"/>
+          <circle cx="842" cy="360" r="1.8" opacity="0.29"/>
+          <circle cx="914" cy="360" r="1.4" opacity="0.19"/>
+          <circle cx="986" cy="360" r="1.2" opacity="0.13"/>
+          <!-- Row y=440 -->
+          <circle cx="122" cy="440" r="1.5" opacity="0.22"/>
+          <circle cx="230" cy="440" r="1.9" opacity="0.32"/>
+          <circle cx="338" cy="440" r="2.3" opacity="0.44"/>
+          <circle cx="446" cy="440" r="2.6" opacity="0.54"/>
+          <circle cx="554" cy="440" r="2.3" opacity="0.44"/>
+          <circle cx="662" cy="440" r="1.9" opacity="0.32"/>
+          <circle cx="770" cy="440" r="1.5" opacity="0.22"/>
+          <circle cx="878" cy="440" r="1.3" opacity="0.16"/>
+          <!-- Row y=520 -->
+          <circle cx="194" cy="520" r="1.2" opacity="0.16"/>
+          <circle cx="338" cy="520" r="1.5" opacity="0.22"/>
+          <circle cx="482" cy="520" r="1.7" opacity="0.27"/>
+          <circle cx="626" cy="520" r="1.5" opacity="0.22"/>
+          <circle cx="770" cy="520" r="1.2" opacity="0.16"/>
+        </g>
+        <!-- Same dots in cyan for right side offset -->
+        <g fill="#39D0D8">
+          <circle cx="590"  cy="160" r="2.1" opacity="0.30"/>
+          <circle cx="698"  cy="200" r="2.4" opacity="0.38"/>
+          <circle cx="806"  cy="240" r="1.8" opacity="0.26"/>
+          <circle cx="662"  cy="320" r="2.2" opacity="0.34"/>
+          <circle cx="770"  cy="360" r="1.7" opacity="0.24"/>
+        </g>
+        <ellipse cx="482" cy="260" rx="380" ry="240" fill="url(#glow5)"/>
+        <rect x="0" y="0" width="1100" height="560" fill="url(#glow5b)"/>
+      </svg>
+      <div class="overlay" style="background: radial-gradient(ellipse 60% 70% at 44% 50%, rgba(13,17,23,0) 0%, #0D1117 85%)"></div>
+      <div class="card-content">
+        <div class="badge">Solution IA</div>
+        <h2>L'intelligence médicale<br/><span class="grad">pour votre structure</span></h2>
+        <p>Rapports automatisés, pilotage économique, benchmarking européen.</p>
+      </div>
+    </div>
+    <div class="card-label">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="num">5</div>
+        <strong>Dot grid — vague de points</strong>
+      </div>
+      <span>Grille de points avec gradient radial de luminosité — très utilisé en SaaS moderne</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
