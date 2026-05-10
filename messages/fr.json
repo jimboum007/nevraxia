@@ -9,8 +9,8 @@
   "hero": {
     "badge": "Solution médicale IA sur mesure",
     "headline": "L'intelligence médicale au service de votre structure",
-    "subline": "Neuraxia automatise vos rapports médicaux, monitore votre activité économique et benchmark vos performances avec les meilleurs centres européens — sur mesure, pour vous.",
-    "subline2": "Pour les structures multi-médecins, Neuraxia centralise le chiffre d'affaires par praticien, suit le cashflow en temps réel et vous donne une visibilité totale sur chaque KPI stratégique — consultations, actes, encaissements, créances — pour piloter votre cabinet de groupe, centre ou clinique avec la précision d'un CFO.",
+    "subline": "Nevraxia automatise vos rapports médicaux, monitore votre activité économique et benchmark vos performances avec les meilleurs centres européens — sur mesure, pour vous.",
+    "subline2": "Pour les structures multi-médecins, Nevraxia centralise le chiffre d'affaires par praticien, suit le cashflow en temps réel et vous donne une visibilité totale sur chaque KPI stratégique — consultations, actes, encaissements, créances — pour piloter votre cabinet de groupe, centre ou clinique avec la précision d'un CFO.",
     "target": "Solution pensée pour les cabinets de groupe, centres médicaux et cliniques multi-sites.",
     "cta_primary": "Demander une démo",
     "cta_secondary": "Découvrir la solution"
@@ -42,11 +42,11 @@
       },
       "enmg": {
         "title": "Automatisation sur mesure de vos processus",
-        "desc": "Chaque centre a ses propres tâches répétitives. Neuraxia les identifie et les automatise — comptes-rendus, suivis, relances, rapports internes — pour réallouer vos ressources humaines là où elles ont vraiment de la valeur."
+        "desc": "Chaque centre a ses propres tâches répétitives. Nevraxia les identifie et les automatise — comptes-rendus, suivis, relances, rapports internes — pour réallouer vos ressources humaines là où elles ont vraiment de la valeur."
       },
       "qr": {
         "title": "PROMs & suivi de qualité par QR code",
-        "desc": "Mesurer les résultats perçus par vos patients — douleur, fonction, qualité de vie — avant et après prise en charge est devenu incontournable pour tout centre sérieux. Neuraxia vous propose des cartes QR code entièrement personnalisables selon vos spécialités et protocoles, pour collecter et analyser vos PROMs sans friction, et démontrer en continu l'amélioration de la qualité de vos soins."
+        "desc": "Mesurer les résultats perçus par vos patients — douleur, fonction, qualité de vie — avant et après prise en charge est devenu incontournable pour tout centre sérieux. Nevraxia vous propose des cartes QR code entièrement personnalisables selon vos spécialités et protocoles, pour collecter et analyser vos PROMs sans friction, et démontrer en continu l'amélioration de la qualité de vos soins."
       },
       "economics": {
         "title": "Pilotage économique en temps réel",
@@ -61,7 +61,7 @@
   "benchmarking": {
     "badge": "Registres européens",
     "title": "Connectez-vous aux registres chirurgicaux européens",
-    "subtitle": "L'analyse automatique de vos protocoles opératoires, suivis post-opératoires et PROMs permet à Neuraxia d'alimenter et de comparer vos résultats aux grands registres européens — SIRIS Rachis, SIRIS Implant, Eurocrine, EPICARD, EPITHOR et les bases Eurostat/OCDE — sans saisie manuelle supplémentaire.",
+    "subtitle": "L'analyse automatique de vos protocoles opératoires, suivis post-opératoires et PROMs permet à Nevraxia d'alimenter et de comparer vos résultats aux grands registres européens — SIRIS Rachis, SIRIS Implant, Eurocrine, EPICARD, EPITHOR et les bases Eurostat/OCDE — sans saisie manuelle supplémentaire.",
     "points": {
       "db": "Intégration automatique aux registres européens (SIRIS, Eurocrine, EPICARD, EPITHOR) : vos données sont structurées et transmises au bon format sans effort supplémentaire",
       "ai": "Accès en temps réel à vos statistiques de centre — activité, complications, mortalité — comparées aux références nationales et européennes de votre spécialité",
@@ -73,7 +73,7 @@
   "scaling": {
     "badge": "Croissance intelligente",
     "title": "Scalez votre activité sans scaler vos coûts",
-    "subtitle": "Neuraxia est conçu pour grandir avec vous. Chaque médecin, chaque spécialité, chaque site s'intègre sans friction ni coût supplémentaire de personnel.",
+    "subtitle": "Nevraxia est conçu pour grandir avec vous. Chaque médecin, chaque spécialité, chaque site s'intègre sans friction ni coût supplémentaire de personnel.",
     "arg1_title": "Moins de personnel administratif",
     "arg1_desc": "La génération automatique de comptes-rendus réduit drastiquement le temps secrétarial. Vos équipes se concentrent sur l'essentiel.",
     "arg2_title": "Croissance sans friction",
@@ -139,10 +139,10 @@
   },
   "testimonials": {
     "title": "Ce que disent nos clients",
-    "subtitle": "Des structures médicales qui ont transformé leur pratique avec Neuraxia.",
+    "subtitle": "Des structures médicales qui ont transformé leur pratique avec Nevraxia.",
     "items": [
       {
-        "quote": "Neuraxia a transformé notre façon de travailler. Nous économisons au moins 2 heures de secrétariat par jour, et la qualité des rapports est bien supérieure à ce qu'on produisait avant.",
+        "quote": "Nevraxia a transformé notre façon de travailler. Nous économisons au moins 2 heures de secrétariat par jour, et la qualité des rapports est bien supérieure à ce qu'on produisait avant.",
         "name": "Dr. A.B.",
         "role": "Neurochirurgien",
         "org": "Centre de neurochirurgie"
@@ -186,6 +186,6 @@
     "contact": "Contact",
     "legal": "Mentions légales",
     "privacy": "Confidentialité",
-    "copyright": "© 2026 Neuraxia. Tous droits réservés."
+    "copyright": "© 2026 Nevraxia. Tous droits réservés."
   }
 }

@@ -51,11 +51,11 @@ export default function Footer() {
               <li><FooterLink href={`/${locale}#contact`}>{t("contact")}</FooterLink></li>
               <li>
                 <a
-                  href="mailto:contact@neuraxia.ch"
+                  href="mailto:contact@nevraxia.ch"
                   className="text-sm transition-colors hover:opacity-80"
                   style={{ color: "#8B949E" }}
                 >
-                  contact@neuraxia.ch
+                  contact@nevraxia.ch
                 </a>
               </li>
               <li><FooterLink href={`/${locale}/legal`}>{t("legal")}</FooterLink></li>

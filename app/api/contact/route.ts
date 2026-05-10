@@ -20,12 +20,12 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     });
 
-    // TODO: Integrate Resend or Nodemailer to send to contact@neuraxia.ch
+    // TODO: Integrate Resend or Nodemailer to send to contact@nevraxia.ch
     // Example with Resend:
     // const resend = new Resend(process.env.RESEND_API_KEY);
     // await resend.emails.send({
-    //   from: 'noreply@neuraxia.ch',
-    //   to: 'contact@neuraxia.ch',
+    //   from: 'noreply@nevraxia.ch',
+    //   to: 'contact@nevraxia.ch',
     //   subject: `Nouvelle demande de démo — ${name} ${lastname}`,
     //   html: `<p>...</p>`
     // });

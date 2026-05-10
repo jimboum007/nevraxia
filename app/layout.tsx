@@ -3,8 +3,8 @@ import { spaceGrotesk } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Neuraxia — Intelligence médicale sur mesure",
-  description: "Neuraxia automatise vos rapports cliniques, monitore votre activité économique et benchmark vos performances avec les meilleurs centres européens.",
+  title: "Nevraxia — Intelligence médicale sur mesure",
+  description: "Nevraxia automatise vos rapports cliniques, monitore votre activité économique et benchmark vos performances avec les meilleurs centres européens.",
 };
 
 export default function RootLayout({

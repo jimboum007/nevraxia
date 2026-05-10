@@ -275,7 +275,7 @@ export default function Contact() {
               </button>
 
               <p className="text-xs text-center" style={{ color: "#8B949E" }}>
-                En soumettant ce formulaire, vous acceptez d&apos;être contacté par l&apos;équipe Neuraxia.
+                En soumettant ce formulaire, vous acceptez d&apos;être contacté par l&apos;équipe Nevraxia.
               </p>
             </form>
           )}

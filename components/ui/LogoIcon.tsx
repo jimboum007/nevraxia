@@ -10,7 +10,7 @@ export default function LogoIcon({ size = 36 }: LogoIconProps) {
       viewBox="0 0 36 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="Neuraxia icon"
+      aria-label="Nevraxia icon"
     >
       <defs>
         <radialGradient id="nx-center" cx="38%" cy="32%" r="65%">

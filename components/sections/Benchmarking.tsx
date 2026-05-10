@@ -178,7 +178,7 @@ export default function Benchmarking() {
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M1 12L4.5 5l3 4 3-7L14 9.5" stroke="#388BFD" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span className="text-sm font-semibold" style={{ color: "#F0F6FC" }}>Neuraxia</span>
+                  <span className="text-sm font-semibold" style={{ color: "#F0F6FC" }}>Nevraxia</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#3FB950" }} />
