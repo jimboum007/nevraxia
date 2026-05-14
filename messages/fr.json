@@ -31,6 +31,7 @@
   "features": {
     "title": "Tout ce dont votre structure a besoin",
     "subtitle": "Une plateforme complète, pensée pour les professionnels de santé qui veulent aller vite sans sacrifier la qualité.",
+    "cta": "En savoir plus",
     "items": {
       "ai_reports": {
         "title": "Génération de rapports par IA",

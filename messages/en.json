@@ -31,6 +31,7 @@
   "features": {
     "title": "Everything your practice needs",
     "subtitle": "A complete platform designed for healthcare professionals who want speed without sacrificing quality.",
+    "cta": "Learn more",
     "items": {
       "ai_reports": {
         "title": "AI-Powered Report Generation",
