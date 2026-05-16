@@ -7,10 +7,10 @@ type LogoProps = {
 
 // Image native: 430 × 145 px → ratio ≈ 2.97
 const sizes: Record<string, { h: number; w: number }> = {
-  sm: { h: 24, w: 71 },
-  md: { h: 44, w: 131 },
-  lg: { h: 52, w: 154 },
-  xl: { h: 68, w: 202 },
+  sm: { h: 28, w: 83 },
+  md: { h: 68, w: 202 },
+  lg: { h: 72, w: 214 },
+  xl: { h: 90, w: 267 },
 };
 
 export default function Logo({ size = "md", variant = "dark" }: LogoProps) {

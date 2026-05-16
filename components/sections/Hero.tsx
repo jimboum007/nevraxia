@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex items-start sm:items-center justify-center overflow-x-hidden pt-16"
+      className="relative min-h-screen flex items-start sm:items-center justify-center overflow-x-hidden pt-20"
       style={{ background: "linear-gradient(160deg, #0B1528 0%, #0D1117 40%, #0D1117 100%)" }}
     >
       {/* Neural network animation canvas */}
