@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+      className="relative min-h-screen flex items-start sm:items-center justify-center overflow-x-hidden pt-16"
       style={{ background: "linear-gradient(160deg, #0B1528 0%, #0D1117 40%, #0D1117 100%)" }}
     >
       {/* Neural network animation canvas */}
@@ -35,11 +35,11 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 sm:py-0">
 
         {/* Top badge */}
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-5 sm:mb-8"
           style={{
             background: "rgba(29,111,235,0.1)",
             border: "1px solid rgba(29,111,235,0.3)",
@@ -56,7 +56,7 @@ export default function Hero() {
 
         {/* H1 headline */}
         <h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 sm:mb-6 tracking-tight"
           style={{ animation: "heroFadeUp 0.7s ease 0.1s both" }}
         >
           <span style={{ color: "#F0F6FC" }}>
@@ -70,7 +70,7 @@ export default function Hero() {
 
         {/* Primary subline */}
         <p
-          className="text-lg sm:text-xl max-w-3xl mx-auto mb-5 leading-relaxed"
+          className="text-lg sm:text-xl max-w-3xl mx-auto mb-3 sm:mb-5 leading-relaxed"
           style={{
             color: "#8B949E",
             animation: "heroFadeUp 0.7s ease 0.2s both",
@@ -81,7 +81,7 @@ export default function Hero() {
 
         {/* Economic subline */}
         <p
-          className="text-base sm:text-lg max-w-3xl mx-auto mb-6 leading-relaxed"
+          className="text-base sm:text-lg max-w-3xl mx-auto mb-4 sm:mb-6 leading-relaxed"
           style={{
             color: "#8B949E",
             animation: "heroFadeUp 0.7s ease 0.28s both",
@@ -92,7 +92,7 @@ export default function Hero() {
 
         {/* Target audience badge */}
         <div
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-10 text-sm font-medium"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 sm:mb-10 text-sm font-medium"
           style={{
             background: "rgba(29,111,235,0.1)",
             border: "1px solid rgba(29,111,235,0.3)",
@@ -185,7 +185,7 @@ export default function Hero() {
 
         {/* App preview mockup */}
         <div
-          className="mt-10 md:mt-20 relative max-w-5xl mx-auto"
+          className="mt-8 md:mt-20 relative max-w-5xl mx-auto hidden sm:block"
           style={{ animation: "heroFadeUp 0.9s ease 0.6s both" }}
         >
           {/* Glow behind mockup */}
