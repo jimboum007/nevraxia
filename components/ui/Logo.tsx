@@ -13,7 +13,7 @@ const sizes: Record<string, { h: number; w: number }> = {
   xl: { h: 90, w: 267 },
 };
 
-export default function Logo({ size = "md", variant = "dark" }: LogoProps) {
+export default function Logo({ size = "md" }: LogoProps) {
   const { h, w } = sizes[size];
   return (
     <Image
@@ -21,12 +21,7 @@ export default function Logo({ size = "md", variant = "dark" }: LogoProps) {
       alt="Nevraxia"
       height={h}
       width={w}
-      style={{
-        height: h,
-        width: "auto",
-        // logo designed for light bg — invert luminosity, restore hue on dark variant
-        filter: variant === "dark" ? "invert(1) hue-rotate(180deg)" : "none",
-      }}
+      style={{ height: h, width: "auto" }}
       priority
     />
   );
