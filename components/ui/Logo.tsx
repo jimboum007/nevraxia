@@ -5,15 +5,15 @@ type LogoProps = {
   variant?: "dark" | "light"; // conservé pour compatibilité API
 };
 
-// Image native: 398 × 142 px → ratio ≈ 2.8
+// Image native: 430 × 145 px → ratio ≈ 2.97
 const sizes: Record<string, { h: number; w: number }> = {
-  sm: { h: 24, w: 67 },
-  md: { h: 44, w: 123 },
-  lg: { h: 52, w: 146 },
-  xl: { h: 68, w: 191 },
+  sm: { h: 24, w: 71 },
+  md: { h: 44, w: 131 },
+  lg: { h: 52, w: 154 },
+  xl: { h: 68, w: 202 },
 };
 
-export default function Logo({ size = "md" }: LogoProps) {
+export default function Logo({ size = "md", variant = "dark" }: LogoProps) {
   const { h, w } = sizes[size];
   return (
     <Image
@@ -21,7 +21,12 @@ export default function Logo({ size = "md" }: LogoProps) {
       alt="Nevraxia"
       height={h}
       width={w}
-      style={{ height: h, width: "auto" }}
+      style={{
+        height: h,
+        width: "auto",
+        // logo designed for light bg — invert luminosity, restore hue on dark variant
+        filter: variant === "dark" ? "invert(1) hue-rotate(180deg)" : "none",
+      }}
       priority
     />
   );
