@@ -7,7 +7,7 @@ export default async function LegalPage({ params }: PageProps<"/[locale]/legal">
   return (
     <main style={{ background: "#0D1117", minHeight: "100vh" }}>
       <Navbar locale={locale} />
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 md:pt-32 md:pb-20">
         <Link
           href={`/${locale}`}
           className="inline-flex items-center gap-2 text-sm mb-10 hover:opacity-80 transition-opacity"

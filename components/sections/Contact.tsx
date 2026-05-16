@@ -102,9 +102,9 @@ export default function Contact() {
   return (
     <section
       id="contact"
+      className="py-16 md:py-20 lg:py-24"
       style={{
         background: "linear-gradient(180deg, #0D1117 0%, #0A0F1A 100%)",
-        padding: "100px 0",
       }}
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

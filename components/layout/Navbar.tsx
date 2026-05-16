@@ -103,8 +103,11 @@ export default function Navbar({ locale }: { locale: string }) {
           {/* Mobile menu button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 rounded-lg"
+            className="md:hidden p-3 rounded-lg"
             style={{ color: "#8B949E" }}
+            aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
           >
             {menuOpen ? (
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
@@ -122,7 +125,8 @@ export default function Navbar({ locale }: { locale: string }) {
       {/* Mobile menu */}
       {menuOpen && (
         <div
-          className="md:hidden px-4 pb-4 space-y-2"
+          id="mobile-menu"
+          className="md:hidden px-4 pt-2 pb-4 space-y-2"
           style={{ background: "rgba(13, 17, 23, 0.98)", borderBottom: "1px solid #30363D" }}
         >
           <MobileNavLink href={`/${locale}#features`} onClick={() => setMenuOpen(false)}>{t("features")}</MobileNavLink>

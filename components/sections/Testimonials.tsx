@@ -32,7 +32,8 @@ export default function Testimonials() {
 
   return (
     <section
-      style={{ background: "#0D1117", padding: "100px 0" }}
+      className="py-16 md:py-20 lg:py-24"
+      style={{ background: "#0D1117" }}
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,17 +92,25 @@ export default function Testimonials() {
         </div>
 
         {/* Dots */}
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center gap-1 mt-8" role="tablist" aria-label="Témoignages">
           {[0, 1, 2].map((i) => (
             <button
               key={i}
               onClick={() => setActive(i)}
-              className="w-2 h-2 rounded-full transition-all duration-300"
-              style={{
-                background: active === i ? "#1D6FEB" : "#30363D",
-                width: active === i ? "24px" : "8px",
-              }}
-            />
+              role="tab"
+              aria-selected={active === i}
+              aria-label={`Témoignage ${i + 1}`}
+              className="flex items-center justify-center p-3 -m-1 transition-all duration-300"
+            >
+              <span
+                className="block rounded-full transition-all duration-300"
+                style={{
+                  background: active === i ? "#1D6FEB" : "#30363D",
+                  width: active === i ? "24px" : "8px",
+                  height: "8px",
+                }}
+              />
+            </button>
           ))}
         </div>
       </div>

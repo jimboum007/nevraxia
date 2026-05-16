@@ -66,9 +66,9 @@ export default function Benchmarking() {
     <section
       id="benchmarking"
       ref={ref}
+      className="py-16 md:py-20 lg:py-24"
       style={{
         background: "linear-gradient(180deg, #0D1117 0%, #0A0F16 50%, #0D1117 100%)",
-        padding: "100px 0",
         position: "relative",
         overflow: "hidden",
       }}
@@ -109,7 +109,7 @@ export default function Benchmarking() {
       </svg>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Left: text */}
           <div
             style={{

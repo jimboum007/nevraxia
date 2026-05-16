@@ -60,9 +60,9 @@ export default function ScalingROI() {
 
   return (
     <section
+      className="py-16 md:py-20 lg:py-24"
       style={{
         background: "linear-gradient(180deg, #0A1628 0%, #0D1A30 50%, #0A1628 100%)",
-        padding: "100px 0",
       }}
       ref={ref}
     >

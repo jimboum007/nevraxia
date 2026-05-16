@@ -108,7 +108,7 @@ export default function Stats() {
   ];
 
   return (
-    <section style={{ background: "#0D1117", padding: "80px 0" }} ref={ref}>
+    <section className="py-12 md:py-16 lg:py-20" style={{ background: "#0D1117" }} ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {stats.map((s, i) => (

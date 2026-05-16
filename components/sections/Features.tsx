@@ -282,9 +282,8 @@ function FeatureBlock({
 
   return (
     <div
-      className="flex flex-col md:flex-row items-center gap-12 py-16"
+      className={`flex flex-col items-center gap-8 md:gap-12 py-12 md:py-16 ${isEven ? "md:flex-row" : "md:flex-row-reverse"}`}
       style={{
-        flexDirection: isEven ? undefined : "row-reverse",
         opacity: inView ? 1 : 0,
         transform: inView ? "translateY(0)" : "translateY(30px)",
         transition: `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`,
@@ -292,18 +291,18 @@ function FeatureBlock({
       }}
     >
       {/* Text side */}
-      <div className="flex-1 max-w-lg">
+      <div className="flex-1 w-full md:max-w-lg">
         <div className="mb-4">{icon}</div>
-        <h3 className="text-2xl font-bold mb-4" style={{ color: "#F0F6FC" }}>{title}</h3>
+        <h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: "#F0F6FC" }}>{title}</h3>
         <p className="text-base leading-relaxed mb-6" style={{ color: "#8B949E" }}>{desc}</p>
-        <Link href={contactHref} className="inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-70">
+        <Link href={contactHref} className="inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-70 min-h-[44px]">
           <div className="w-2 h-2 rounded-full" style={{ background: color }} />
           <span style={{ color }}>{cta} →</span>
         </Link>
       </div>
 
       {/* Visual side */}
-      <div className="flex-1 w-full max-w-md">
+      <div className="flex-1 w-full md:max-w-md">
         <div
           className="relative rounded-2xl overflow-hidden p-6"
           style={{ background: "#161B22", border: "1px solid #30363D" }}
@@ -343,7 +342,7 @@ export default function Features() {
   const featureKeys = ["ai_reports", "protocols", "enmg", "qr", "economics", "stats"] as const;
 
   return (
-    <section id="features" style={{ background: "#0D1117", padding: "80px 0", position: "relative", overflow: "hidden" }} ref={ref}>
+    <section id="features" className="py-12 md:py-16 lg:py-20" style={{ background: "#0D1117", position: "relative", overflow: "hidden" }} ref={ref}>
       {/* Aurora blobs */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div style={{

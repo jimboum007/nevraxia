@@ -187,7 +187,7 @@ export default function Hero() {
         </div>
 
         {/* App preview mockup */}
-        <div className="mt-20 relative max-w-5xl mx-auto">
+        <div className="mt-10 md:mt-20 relative max-w-5xl mx-auto">
           {/* Glow behind mockup */}
           <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 50% at 50% 60%, rgba(29,111,235,0.13) 0%, transparent 70%)", filter: "blur(24px)" }} />
 

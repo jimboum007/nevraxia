@@ -57,7 +57,8 @@ export default function Pricing() {
     <section
       id="pricing"
       ref={ref}
-      style={{ background: "#0D1117", padding: "100px 0" }}
+      className="py-16 md:py-20 lg:py-24"
+      style={{ background: "#0D1117" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

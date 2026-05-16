@@ -135,3 +135,28 @@ body {
   mask-composite: exclude;
   pointer-events: none;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-float {
+    animation: none;
+    transform: translateY(0);
+  }
+
+  .animate-pulse-glow {
+    animation: none;
+    box-shadow: 0 0 20px rgba(29, 111, 235, 0.3);
+  }
+
+  .gradient-text {
+    animation: none;
+    background-position: 0% 50%;
+  }
+}
